@@ -1,0 +1,43 @@
+.writing {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  /* border-left: 1px solid #999; */
+}
+.writing section.row {
+  padding: 2em;
+  /* border: 1px solid green; */
+  /* width: 50%; */
+}
+
+.post {
+  /* border: 1px solid rgba(9, 9, 9, 0.1); */
+  border-radius: 5px;
+  padding: 1em;
+  max-height: 500px;
+  margin: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(9,9,9,.3);
+}
+
+.post img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.post p {
+  font-size: 20px;
+  color: #555;
+}
+
+.post h2 {
+  width: 100%;
+  font-weight: 900;
+  margin: .5em auto;
+}
+
+.post a {
+  color: inherit;
+}
+.post a:hover {
+  color: orange;
+}

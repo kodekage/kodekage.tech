@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap'); 
+.App-header {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8),rgba(0,0,0,1)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_tzhnyp.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: orange;
+  height: 100vh;
+}
+
+.invisible-div {
+  visibility: hidden;
+}
+
+.bg-img {
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  margin-top: 65vh;
+}
+
+.bg-img span {
+  color: #007bff;
+  
+}
+
+.bg-img h1 {
+  font-size: 9rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 1em 0 .1em;
+  visibility: hidden;
+}
+
+.bg-img h2 {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.bg-img a,.bg-img a:hover {
+  text-decoration: none;
+  color: #fff;
+  padding: .1em;
+}
+
+@media (max-width:959px) {
+  .App-header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .bg-img {
+    margin-top: 75vh;
+  }
+
+  .bg-img h1 {
+    font-size: 50px;
+  }
+  .bg-img h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-img h1 {
+    font-size: 120px;
+  }
+  .bg-img {
+    margin-top: 75vh;
+  }
+}
