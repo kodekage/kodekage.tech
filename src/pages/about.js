@@ -18,7 +18,6 @@ class AboutPage extends React.Component {
       origin: 'right',
       duration: 2000,
       delay: 1000,
-      // distance: '50px',
       scale: 1,
       easing: 'ease',
       reset: true
@@ -27,7 +26,6 @@ class AboutPage extends React.Component {
       origin: 'right',
       duration: 2000,
       delay: 1500,
-      // distance: '50px',
       scale: 1,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       reset: true

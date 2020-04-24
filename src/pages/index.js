@@ -6,14 +6,6 @@ import Layout from "../components/layout"
 import '../styles/index.css'
 
 class IndexPage extends React.Component {
-  state = {
-    title: "Prosper"
-  }
-
-  changeTitle = () => {
-    
-  }
-
   componentDidMount = () => {
     const config1 = {
       origin: 'right',
