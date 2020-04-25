@@ -71,7 +71,7 @@ section.about-section {
 }
 
 .about .projects {
-  background: #111;
+  background: whitesmoke;
   text-align: center;
 }
 
@@ -80,18 +80,18 @@ section.about-section {
   margin: 1em ;
   font-size: 15px;
   background: #222;
-  box-shadow: 5px 5px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 0 rgba(9,9,9, 1);
 }
 
 .about .project-detail {
   padding: 0 1em;
 }
 .about .projects h3 {
-  color: #ffffff;
+  color: #111;
   padding-top: 1.5em;
 }
 .about .project-item a {
-  color: #007bff;
+  color: orange;
   text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ section.about-section {
 
 .work-detail h3, .community-item-about h3 {
   font-size: 30px;
-  color: #007bff;
+  color: orange;
   text-align: left;
 }
 .work-detail, .community-item-about {

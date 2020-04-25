@@ -6,7 +6,8 @@ import ScrollReveal from 'scrollreveal';
 export default class Navigator extends React.Component {
   state = {
     bg: {
-      background: '#111'
+      background: 'whitesmoke',
+      boxShadow: '0 0 5px 1px rgba(2,2,2,0.9)'
     }
   }
 
@@ -31,7 +32,7 @@ export default class Navigator extends React.Component {
       },
       headingFont: {
         fontSize: '35px',
-        color: '#fff',
+        color: '#222',
         margin: '0',
         fontWeight: '0'
       }
@@ -42,7 +43,7 @@ export default class Navigator extends React.Component {
         <Navbar collapseOnSelect style={this.state.bg} expand="lg" variant="dark" fixed="top">
           <Link to="/">
             <Navbar.Brand ref="box1" style={navStyle.headingFont}>
-              kode<span style={{color: '#007bff', fontWeight: '900', borderBottom: '3px solid #007bff'}}>kage</span>
+              kode<span style={{color: 'orange', fontWeight: '900'}}>kage</span>
             </Navbar.Brand>
           </Link>
 

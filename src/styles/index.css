@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap'); 
 .App-header {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8),rgba(0,0,0,1)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_tzhnyp.jpg');
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7),rgba(0,0,0,.9)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_tzhnyp.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: orange;
   height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 
 .invisible-div {
@@ -17,11 +18,11 @@
   margin: auto;
   width: 90%;
   text-align: left;
-  margin-top: 65vh;
+  margin-top: 60vh;
 }
 
 .bg-img span {
-  color: #007bff;
+  color: orange;
   
 }
 

@@ -42,36 +42,38 @@
 }
 
 .speaking-timeline {
-  background: #111;
+  background: whitesmoke;
 }
 .speaking-timeline h3 {
-  color: #fff;
+  color: orange;
   text-align: center;
 }
 
 .talk {
-  background: #333;
-  color: #007bff;
+  background: #222;
+  color: #fff;
   margin: 1em auto 2em;
   padding: .5em 1em 1em;
   height: 350px;
-  box-shadow: 10px 10px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 0 rgba(1, 1, 1, 0.8);
   width: 85%;
 }
 .talk h4 {
   font-size: 30px;
   margin: .5em 0 0;
+  color: orange;
 }
 .talk h5 {
   font-size: 17px;
-  color: #fff;
+  /* color: orange; */
 }
 .talk-label {
-  background: #fff;
+  background: #007bff;
   font-style: italic;
   padding: .01em .5em;
   border-radius: 5px;
   margin-bottom: .5em;
+  color: #fff;
 }
 .talk p {
   color: #fff;
