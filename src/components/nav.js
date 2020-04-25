@@ -6,7 +6,7 @@ import ScrollReveal from 'scrollreveal';
 export default class Navigator extends React.Component {
   state = {
     bg: {
-      background: 'whitesmoke',
+      background: 'rgba(18, 46, 187, 0.99)',
       boxShadow: '0 0 5px 1px rgba(2,2,2,0.9)'
     }
   }
@@ -32,7 +32,7 @@ export default class Navigator extends React.Component {
       },
       headingFont: {
         fontSize: '35px',
-        color: '#222',
+        color: '#fff',
         margin: '0',
         fontWeight: '0'
       }
