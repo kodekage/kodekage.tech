@@ -9,8 +9,6 @@ import {
 import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"
-import CommunityDetail from "../components/communitydetail"
-import Talk from "../components/talk"
 import Footer from "../components/footer"
 
 import "../styles/community.css"
@@ -39,6 +37,62 @@ class CommunityPage extends React.Component {
   }
 
   render() {
+    const CommunityDetail = ({
+      img,
+      title,
+      duration,
+      experience,
+      experience_url,
+      clas,
+      community,
+    }) => (
+      <div className={clas}>
+        <div className="community-item col-lg-2 col-md-4">
+          <img src={img} alt={img} />
+    
+          <div style={{ fontSize: "15px" }}>
+            <h4>{community}</h4>
+            <span>{duration}</span>
+          </div>
+        </div>
+    
+        <div className="community-item-about col-lg col-md">
+          <a href={experience_url}>
+            <h3>{title}</h3>
+          </a>
+    
+          {experience}
+        </div>
+      </div>
+    )
+
+    const Talk = ({ title, label, talks, link }) => (
+      <div className="talk">
+        <div className="talk-detail">
+          <h4>{title}</h4>
+    
+          <span className="talk-label">{label}</span>
+        </div>
+    
+        <div className="talk-event">
+          <div>
+            <h4>Presentations</h4>
+            {talks.map(item => (
+              <h5>
+                {item[0]} (<i>{item[1]}</i>)
+              </h5>
+            ))}
+          </div>
+    
+          <div>
+            <h4>Resources</h4>
+    
+            <a href={link}>Slide Link</a>
+          </div>
+        </div>
+      </div>
+    )
+
     return (
       <Layout>
         <div className="community row no-gutters">
