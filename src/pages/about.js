@@ -9,8 +9,6 @@ import {
 import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"
-// import Work from "../components/work"
-import Project from "../components/projects"
 import Footer from "../components/footer"
 
 import "../styles/about.css"
@@ -41,6 +39,20 @@ class AboutPage extends React.Component {
   }
 
   render() {
+    const Project = ({ img, title, about, url }) => (
+      <div className="col-lg-5 project-item">
+        <a href={url}>
+          <img src={img} alt={img} />
+    
+          <div className="project-detail">
+            <h4>{title}</h4>
+    
+            <span style={{ color: "#fff", fontWeight: "100" }}>{about}</span>
+          </div>
+        </a>
+      </div>
+    )
+
     const Work = ({ img, title, company, detail, duration }) => (
       <div className="work row justify-content-center align-items-start">
         <div className="work-company col-lg-3 col-md-4">
