@@ -43,10 +43,10 @@ class AboutPage extends React.Component {
       <div className="col-lg-5 project-item">
         <a href={url}>
           <img src={img} alt={img} />
-    
+
           <div className="project-detail">
             <h4>{title}</h4>
-    
+
             <span style={{ color: "#fff", fontWeight: "100" }}>{about}</span>
           </div>
         </a>
@@ -72,7 +72,7 @@ class AboutPage extends React.Component {
           <p>{detail}</p>
         </div>
       </div>
-    );
+    )
 
     return (
       <Layout>
