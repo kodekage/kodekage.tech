@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `kodekage`,
+    short_name: `kage`,
     description: `Prosper Opara portfolio website`,
     author: `Prosper Opara`,
   },
