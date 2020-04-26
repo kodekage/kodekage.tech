@@ -7,27 +7,24 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Nav from './nav';
-// import Footer from './footer'
-
-// import "./layout.css"
+import Nav from "./nav"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          short_name
+        }
+      }
+    }
+  `)
 
   return (
-    <div className="layout container_fluid" style={{overflow: 'none'}}>
-    <Nav/>
+    <div className="layout container_fluid" style={{ overflow: "none" }}>
+      <Nav short_name={data.site.siteMetadata.short_name} />
       {children}
     </div>
   )

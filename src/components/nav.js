@@ -1,49 +1,58 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { Navbar, Nav } from 'react-bootstrap';
-import ScrollReveal from 'scrollreveal';
+import React from "react"
+import { Link } from "gatsby"
+import { Navbar, Nav } from "react-bootstrap"
+import ScrollReveal from "scrollreveal"
 
 export default class Navigator extends React.Component {
   state = {
     bg: {
-      background: 'rgba(18, 46, 187, 0.99)',
-      boxShadow: '0 0 5px 1px rgba(2,2,2,0.9)'
-    }
+      background: "#333",
+      boxShadow: "0 0 5px 1px rgba(2,2,2,0.9)",
+    },
   }
 
   componentDidMount = () => {
     const config = {
-      origin: 'right',
+      origin: "right",
       duration: 2000,
       delay: 0,
-      distance: '100px',
+      distance: "100px",
       scale: 1,
-      easing: 'ease',
-      reset: true
-    };
+      easing: "ease",
+      reset: true,
+    }
 
-    ScrollReveal().reveal(this.refs.box1, config);
+    ScrollReveal().reveal(this.refs.box1, config)
   }
 
   render() {
     const navStyle = {
       linkFont: {
-        fontSize: '20px'
+        fontSize: "20px",
       },
       headingFont: {
-        fontSize: '35px',
-        color: '#fff',
-        margin: '0',
-        fontWeight: '0'
-      }
+        fontSize: "35px",
+        color: "#fff",
+        margin: "0",
+        fontWeight: "0",
+      },
     }
-    
-    return(
+
+    return (
       <>
-        <Navbar collapseOnSelect style={this.state.bg} expand="lg" variant="dark" fixed="top">
+        <Navbar
+          collapseOnSelect
+          style={this.state.bg}
+          expand="lg"
+          variant="dark"
+          fixed="top"
+        >
           <Link to="/">
             <Navbar.Brand ref="box1" style={navStyle.headingFont}>
-              kode<span style={{color: 'orange', fontWeight: '900'}}>kage</span>
+              kode
+              <span style={{ color: "orange", fontWeight: "900" }}>
+                {this.props.short_name}
+              </span>
             </Navbar.Brand>
           </Link>
 
@@ -53,7 +62,7 @@ export default class Navigator extends React.Component {
               <Nav.Link ref="box2">
                 <Link to="/about">About</Link>
               </Nav.Link>
-              
+
               <Nav.Link ref="box3">
                 <Link to="/about#jobexperience">Experience</Link>
               </Nav.Link>

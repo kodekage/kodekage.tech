@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 const WritingPage = () => (
   <Layout>
-     {/* <div className="col-lg writing" style={{color: '#111'}}>
+    {/* <div className="col-lg writing" style={{color: '#111'}}>
       <section className="row no-gutter justify-content-start">
 
 

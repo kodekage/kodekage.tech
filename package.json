@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kodekage.dev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Prosper Opara portfolio website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Prosper Opara",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -29,7 +29,11 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "fullstack engineer",
+    "software engineer",
+    "portfolio site"
   ],
   "license": "MIT",
   "scripts": {
@@ -43,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/OPARA-PROSPER/kodekage.dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/OPARA-PROSPER/kodekage.dev/issues"
   }
 }

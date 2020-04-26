@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Prosper Opara`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `kodekage`,
+    short_name: `kage`,
+    description: `Prosper Opara portfolio website`,
+    author: `Prosper Opara`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,11 +38,11 @@ module.exports = {
           },
           {
             family: `Open Sans`,
-            variants: [`400`, `700`]
+            variants: [`400`, `700`],
           },
         ],
       },
-    }   
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
