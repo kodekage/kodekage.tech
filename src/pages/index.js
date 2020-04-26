@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"

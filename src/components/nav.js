@@ -6,7 +6,7 @@ import ScrollReveal from "scrollreveal"
 export default class Navigator extends React.Component {
   state = {
     bg: {
-      background: "rgba(18, 46, 187, 0.99)",
+      background: "#333",
       boxShadow: "0 0 5px 1px rgba(2,2,2,0.9)",
     },
   }
@@ -50,7 +50,9 @@ export default class Navigator extends React.Component {
           <Link to="/">
             <Navbar.Brand ref="box1" style={navStyle.headingFont}>
               kode
-              <span style={{ color: "orange", fontWeight: "900" }}>kage</span>
+              <span style={{ color: "orange", fontWeight: "900" }}>
+                {this.props.short_name}
+              </span>
             </Navbar.Brand>
           </Link>
 
