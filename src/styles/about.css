@@ -24,7 +24,7 @@ svg {
 }
 
 .about header {
-  background: linear-gradient(180deg,rgba(0,0,0, .5), rgba(0,0,0,.6),rgba(0,0,0,1)), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_1_ucncoi.jpg");
+  background: linear-gradient(180deg,rgba(0,0,0, .5), rgba(0,0,0,.6),rgba(0,0,0,1)), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561707/op_1_ucncoi.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ section.about-section {
 }
 
 .about .project-item img {
-  height: 200px;
+  height: 50%;
   width: 100%;
 }
 

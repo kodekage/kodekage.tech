@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap'); 
 .App-header {
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7),rgba(0,0,0,.9)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_tzhnyp.jpg');
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7),rgba(0,0,0,.9)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561707/op_tzhnyp.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,10 +50,6 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7),rgba(0,0,0,.9)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561707/op_tzhnyp.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   .bg-img {
     margin-top: 75vh;
