@@ -13,7 +13,6 @@ import Footer from "../components/footer"
 
 import "../styles/about.css"
 import blue from "../images/blue.png"
-import project from "../images/project.png"
 
 class AboutPage extends React.Component {
   componentDidMount = () => {
@@ -143,7 +142,7 @@ class AboutPage extends React.Component {
               <h3>Work Experience</h3>
 
               <Work
-                img={blue}
+                img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/e_vectorize/v1588085469/nopic_startup_t5ljpy.png"
                 title="Fullstack JavaScript Developer"
                 company="Freelancing"
                 duration="Jan. 2018 - Present"
@@ -269,28 +268,28 @@ class AboutPage extends React.Component {
 
                 <div className="row no-gutters align-items-center justify-content-center text-left">
                   <Project
-                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561686/team_om5ixx.png"
+                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,e_fill_light:0,h_213,w_400/v1586561686/team_om5ixx.png"
                     title="Teamwork [Client App]"
                     about="Teamwork is a social network for employees of an organization built to facilitate more interaction between colleagues and promote team bonding."
                     url="https://github.com/OPARA-PROSPER/teamwork-client"
                   />
 
                   <Project
-                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561691/team-api_k92j55.png"
+                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,e_fill_light:0,w_400/v1586561691/team-api_k92j55.png"
                     title="Teamwork [API]"
                     about="This project is a RESTFul API for the teamwork client app. It's built with Nodejs/Expressjs"
                     url="https://github.com/OPARA-PROSPER/teamwork"
                   />
 
                   <Project
-                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561701/gads_twnpis.png"
+                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,e_fill_light:0,w_400/v1586561701/gads_twnpis.png"
                     title="GADSIMO"
                     about="Google Africa Developer Scholarship (GADS) community in Imo state community website"
                     url="https://alcimo.herokuapp.com"
                   />
 
                   <Project
-                    img={project}
+                    img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_400/v1588084502/project_z8921h.png"
                     title="Personal Site"
                     about="My personal website"
                     url="/"
