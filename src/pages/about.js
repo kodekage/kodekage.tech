@@ -40,9 +40,10 @@ class AboutPage extends React.Component {
 
   render() {
     const Project = ({ img, title, about, url }) => (
-      <div className="col-lg-5 project-item">
+      <div className="col-lg-5 project-item" style={img? {height: '350px'}: {height: '200px', padding: '2em .5em'}}>
         <a href={url}>
-          <img src={img} alt={img} />
+
+          {img ? <img src={img} alt={img} /> : null }
 
           <div className="project-detail">
             <h4>{title}</h4>
@@ -296,14 +297,12 @@ class AboutPage extends React.Component {
                   />
 
                   <Project
-                    img={blue}
                     title="Currency Converter App"
                     about="A Progressive Web Application that performs currency conversion"
                     url="https://github.com/OPARA-PROSPER/ALC_Currency_Converter"
                   />
 
                   <Project
-                    img={blue}
                     title="Address Book"
                     about="An online contact list address book"
                     url="https://github.com/OPARA-PROSPER/addressBook"

@@ -617,8 +617,8 @@ pre tt:after {
 .about span, .community-item-about span {
   text-decoration-line: underline;
   text-decoration-color: #222;
-  font-weight: 700;
-  color: #007bff;
+  font-weight: 900;
+  color: orange;
 }
 
 .tdlr {
@@ -626,6 +626,7 @@ pre tt:after {
   font-size: 30px;
 }
 
-.navbar a {
+a.nav-link {
   color: #fff;
+  width: 100%;
 }
