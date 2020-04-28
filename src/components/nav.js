@@ -1,57 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap"
-import ScrollReveal from "scrollreveal"
 
-export default class Navigator extends React.Component {
-  state = {
-    bg: {
-      background: "#333",
-      boxShadow: "0 0 5px 1px rgba(2,2,2,0.9)",
-    },
-  }
-
-  componentDidMount = () => {
-    const config = {
-      origin: "right",
-      duration: 2000,
-      delay: 0,
-      distance: "100px",
-      scale: 1,
-      easing: "ease",
-      reset: true,
-    }
-
-    ScrollReveal().reveal(this.refs.box1, config)
-  }
-
-  render() {
-    const navStyle = {
+export default (props) => {
+  const navStyle = {
       linkFont: {
-        fontSize: "20px",
+        fontSize: "17px",
       },
       headingFont: {
-        fontSize: "35px",
+        fontSize: "25px",
         color: "#fff",
         margin: "0",
         fontWeight: "0",
       },
+      bg: {
+        background: "#333",
+        boxShadow: "0 0 5px 1px rgba(2,2,2,0.9)",
+      },
     }
 
-    return (
+  return (
       <>
         <Navbar
           collapseOnSelect
-          style={this.state.bg}
+          style={navStyle.bg}
           expand="lg"
           variant="dark"
           fixed="top"
         >
           <Link to="/">
-            <Navbar.Brand ref="box1" style={navStyle.headingFont}>
+            <Navbar.Brand style={navStyle.headingFont}>
               kode
               <span style={{ color: "orange", fontWeight: "900" }}>
-                {this.props.short_name}
+                {props.short_name}
               </span>
             </Navbar.Brand>
           </Link>
@@ -59,33 +40,15 @@ export default class Navigator extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto" style={navStyle.linkFont}>
-              <Nav.Link ref="box2">
-                <Link to="/about">About</Link>
-              </Nav.Link>
-
-              <Nav.Link ref="box3">
-                <Link to="/about#jobexperience">Experience</Link>
-              </Nav.Link>
-
-              <Nav.Link ref="box4">
-                <Link to="/about#projects">Projects</Link>
-              </Nav.Link>
-
-              <Nav.Link ref="box5">
-                <Link to="/community">Community</Link>
-              </Nav.Link>
-
-              <Nav.Link ref="box6">
-                <Link to="/community#talks">Talks</Link>
-              </Nav.Link>
-
-              <Nav.Link ref="box7">
-                <a href="mailto:oparaprosper79@gmail.com">Contact</a>
-              </Nav.Link>
+              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about#jobexperience">Experience</Link>
+              <Link className="nav-link" to="/about#projects">Projects</Link>
+              <Link className="nav-link" to="/community">Community</Link>
+              <Link className="nav-link" to="/community#talks">Talks</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </>
     )
-  }
 }
