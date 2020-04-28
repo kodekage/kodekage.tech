@@ -17,16 +17,16 @@ class CommunityPage extends React.Component {
   componentDidMount = () => {
     const config = {
       origin: "right",
-      duration: 2000,
-      delay: 1000,
+      duration: 1000,
+      delay: 500,
       scale: 1,
       easing: "ease",
       reset: true,
     }
     const config1 = {
       origin: "right",
-      duration: 2000,
-      delay: 1500,
+      duration: 1000,
+      delay: 500,
       scale: 1,
       easing: "cubic-bezier(0.5, 0, 0, 1)",
       reset: true,

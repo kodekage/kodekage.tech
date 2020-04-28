@@ -9,7 +9,7 @@ class IndexPage extends React.Component {
   componentDidMount = () => {
     const config1 = {
       origin: "right",
-      duration: 2000,
+      duration: 1000,
       delay: 0,
       distance: "100px",
       scale: 1,
@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
     }
     const config2 = {
       origin: "right",
-      duration: 2500,
+      duration: 500,
       delay: 1000,
       distance: "500px",
       scale: 1,
@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
     }
     const config3 = {
       origin: "right",
-      duration: 2500,
+      duration: 500,
       delay: 2000,
       distance: "500px",
       scale: 1,
@@ -36,7 +36,7 @@ class IndexPage extends React.Component {
     }
     const config4 = {
       origin: "right",
-      duration: 2500,
+      duration: 500,
       delay: 3000,
       distance: "500px",
       scale: 1,
