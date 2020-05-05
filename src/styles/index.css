@@ -170,6 +170,8 @@ h3 {
   .App-header .img img {
     right: 0vw;
     left: 0vw;
+    width: 100%;
+    height: 100%;
     /*border-radius: 15px;*/
   }
   .bg-img h1 {
