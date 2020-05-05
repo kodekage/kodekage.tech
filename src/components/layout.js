@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="layout container_fluid" style={{ overflow: "none" }}>
+    <div className="layout" style={{ overflow: "none" }}>
       <Nav short_name={data.site.siteMetadata.short_name} />
       {children}
     </div>

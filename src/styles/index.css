@@ -1,42 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap'); 
 .App-header {
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7),rgba(0,0,0,.9)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561707/op_tzhnyp.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: ghostwhite;
   color: orange;
-  height: 100vh;
-  overflow: hidden;
+  height: 70vh;
   width: 100%;
+}
+hr {
+  width: 300px;
+  margin: 1em auto 4em;
+  /* color: orange; */
+  height: 1px;
+  background: rgba(153, 153, 153, 0.335);
+}
+hr::before {
+  content: "| | |";
+  position: relative;
+  top: -12px;
+  left: 50%;
+  color: orange;
 }
 
 .invisible-div {
   visibility: hidden;
 }
-
+.App-header .img {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 15vh;
+  bottom: inherit;
+}
+.App-header .img img {
+  width: 30%;
+  height: 30%;
+  position: relative;
+  left: 60vw;
+  border-radius: 100%;
+  background: orange;
+  /*box-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;*/
+  margin: 0;
+}
 .bg-img {
-  margin: auto;
-  width: 90%;
+  margin: 0 auto 0 0;
+  width: 60%;
+  position: relative;
   text-align: left;
-  margin-top: 60vh;
+  margin: 30vh auto 10vh;
 }
 
 .bg-img span {
   color: orange;
-  
 }
 
 .bg-img h1 {
-  font-size: 9rem;
+  font-size: 2rem;
   font-weight: 900;
-  color: #ffffff;
-  margin: 1em 0 .1em;
+  color: #333;
+  margin: 0 0 3em;
   visibility: hidden;
 }
 
 .bg-img h2 {
   cursor: pointer;
   font-size: 25px;
+  font-weight: 100;
 }
 
 .bg-img a,.bg-img a:hover {
@@ -45,28 +72,125 @@
   padding: .1em;
 }
 
+
+.svg {
+  color: #333;
+  margin: 0 0 2em;
+  padding: 0 3em;
+}
+
+svg {
+  margin: 0 .1em;
+}
+
+.svg a {
+  color: inherit;
+}
+.svg a:hover {
+  color: #007bff;
+}
+.stack hr {
+  margin-bottom: 1em;
+}
+.stack hr:before {
+  left: 0;
+  /*right: ;*/
+}
+.stack .tools svg {
+  color: #333;
+}
+.stack {
+  background: ghostwhite;
+  padding: .5em 0 10em;
+  width: 100%;
+  margin: auto;
+}
+.stack h3 {
+  padding: 1em 0 0;
+}
+.stack h4 {
+  margin: 1em 0 .5em;
+  font-size: 35px;
+}
+.stack svg {
+  margin-top: .5em;
+}
+
+h3 {
+  font-size: 50px;
+  color: #333;
+  font-weight: 900;
+  margin: 0 0;
+  text-align: center;
+}
+
+.contact {
+  background: ghostwhite;
+  /*padding: 2em;*/
+  /*height: 400px;*/
+  padding-bottom: 3em;
+}
+.contact h3{
+  padding: 1em 0 0;
+}
+.contact-form {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+  padding: 2em;
+  border-radius: 5px;
+}
+.contact-form textarea {
+  height: 200px;
+}
+
 @media (max-width:959px) {
   .App-header {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 85vh;
+    text-align: left;
+    width: 100%;
   }
   .bg-img {
-    margin-top: 75vh;
+    margin-top: 45vh;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 4em;
+  }
+  .App-header .img {
+    width: 50%;
+    /*border: 1px solid green;*/
+    left: 10vh;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  hr {
+    width: 200px;
+  }
+  .App-header .img img {
+    right: 0vw;
+    left: 0vw;
+    /*border-radius: 15px;*/
   }
   .bg-img h1 {
-    font-size: 50px;
-  }
-  .bg-img h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .App-header {
+    height: 90vh;
+  }
+  p {
+    font-size: 25px;
+  }
   .bg-img h1 {
-    font-size: 120px;
+    font-size: 60px;
   }
   .bg-img {
-    margin-top: 75vh;
+    margin-top: 50vh;
+    text-align: left;
+    width: 80%;
   }
 }

@@ -1,20 +1,23 @@
 .community {
   text-align: left;
-  padding: 0;
+  padding: 5em 0;
   margin: 0;
-  height: 100vh;
+  background: whitesmoke;
+  width: 100%;
 }
 
 .community header {
-  background: linear-gradient(180deg,rgba(0,0,0, .5), rgba(0,0,0,.6),rgba(0,0,0,1)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561698/op_2_fz6fnq.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  /*background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url('https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561698/op_2_fz6fnq.jpg') no-repeat center;*/
+  background: ghostwhite;
+  height: 300px;
   width: 100%;
-  height: 100vh;
   text-align: left;
 }
-
+.community header img {
+  height: 100%;
+  width: 100%;
+}
 .community header h2 {
   padding-top: 80vh;
   margin:  0;
@@ -24,6 +27,7 @@
   color: #fff;
   font-size: 70px;
 }
+
 .community-item h4 {
   margin: 0;
   font-size: 20px;
@@ -31,9 +35,6 @@
 
 .community article {
   color: #333;
-  height: 100vh;
-  overflow-y: scroll;
-  /* padding: 1em 0; */
   font-size: 20px;
 }
 
@@ -42,44 +43,58 @@
 }
 
 .speaking-timeline {
-  background: whitesmoke;
-}
-.speaking-timeline h3 {
-  color: orange;
-  text-align: center;
+  padding: 5em 0;
+  width: 100%;
 }
 
 .talk {
-  background: #222;
-  color: #fff;
+  background: #fff;
+  color: #333;
   margin: 1em auto 2em;
-  padding: .5em 1em 1em;
-  height: 350px;
-  box-shadow: 10px 10px 0 rgba(1, 1, 1, 0.8);
-  width: 85%;
+  padding: 2em 2em;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
-.talk h4 {
+.talk-detail h4 {
   font-size: 30px;
-  margin: .5em 0 0;
-  color: orange;
+  margin:0 0 .5em;
+  /*color: #fff;*/
+}
+.talk-event h4{
+  font-weight: 100;
+  margin: .5em 0;
+  font-size: 25px;
+  color: #333;
+}
+.talk a:hover {
+  text-decoration: none;
 }
 .talk h5 {
   font-size: 17px;
-  /* color: orange; */
+  color: #333;
+  margin: .3em 0;
+  font-weight: 100;
 }
-.talk-label {
-  background: #007bff;
-  font-style: italic;
-  padding: .01em .5em;
-  border-radius: 5px;
-  margin-bottom: .5em;
-  color: #fff;
+.talk i {
+  float: right;
 }
 .talk p {
-  color: #fff;
+  color: #777;
+}
+.talk hr {
+  width: 100%;
+  margin-bottom: 1em;
+  background: ghostwhite;
+}
+.talk hr::before {
+  display: none;
 }
 
 @media (max-width: 959px) {
+  .community {
+    text-align: left;
+  }
   .community header {
     display: none;
   }
@@ -87,8 +102,15 @@
     padding-top: 20%;
     font-size: 40px;
   }
+  .about-community {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin: 1em auto;
+    padding: .5em 0;
+  }
   .community-item {
-    text-align: center;
+    text-align: left;
   }
   .community-item-about h3, .work-detail h4 {
     font-size: 20px;
@@ -100,7 +122,7 @@
   }
   .talk {
     height: 450px;
-    width: 100%;
+    width: 80%;
   }
   .talk h4 {
     font-size: 30px;
@@ -113,7 +135,7 @@
   }
 
   .community-item, .community-item span, .work-company{
-    text-align: center;
+    text-align: left;
     font-size: 25px;
   }
   .community-item img {
@@ -123,15 +145,11 @@
 
   .community header h2 {
     padding-top: 20%;
-    font-size: 200%/1em;
+    /*font-size: 200%/1em;*/
   }
 
   .community-item h4 {
     font-size: 30px;
-  }
-  .community-item-about h3 {
-    font-size: 50px;
-    margin: 0 0 ;
   }
   .talk {
     height: 440px;

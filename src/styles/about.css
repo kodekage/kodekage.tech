@@ -1,138 +1,102 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
-
 .about {
   text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.svg {
-  color: #ffffff;
-  margin: 0;
-  padding: 0 3em;
-}
-
-svg {
-  margin: 0 .1em;
-}
-
-.svg a {
-  color: inherit;
-}
-.svg a:hover {
-  color: #007bff;
-}
-
-.about header {
-  background: linear-gradient(180deg,rgba(0,0,0, .5), rgba(0,0,0,.6),rgba(0,0,0,1)), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_1000/v1586561707/op_1_ucncoi.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  padding: 8em 0;
   width: 100%;
+  background: ghostwhite;
+}
+.about header, .community header {
+  width: 100%;
+  height: 100%;
   text-align: left;
+  transform: rotate(10deg);
+  border-radius: 0;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
-
-.about header h2 {
-  padding-top: 80vh;
-  margin: 0;
-}
-
-.about h2 {
-  font-weight: 900;
-  font-size: 70px;
-  color: #ffffff;
-}
-
-h3 {
-  font-size: 50px;
-  color: #333;
-  font-weight: 900;
-  margin: 0 0 1em;
-  text-align: center;
-}
-.work-detail h4 {
-  font-size: 20px;
-}
-
-.about article {
-  height: 100vh;
-  overflow-y: scroll;
-  box-sizing: inherit;
-  font-size: 20px;
+.about header img {
   width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
-.about section {
-  padding: 0 1em 1em;
-}
-section.about-section {
-  padding-top: 5em;
+.about header:hover, .community header:hover {
+  transform: rotate(0);
+  border: 3px solid #fff;
 }
 
-.about .projects {
-  background: whitesmoke;
-  text-align: center;
+.projects {
+  /*background: #fff;*/
+  padding: 0;
+  width: 80%;
 }
 
-.about .project-item {
-  height: 350px;
-  margin: 1em ;
-  font-size: 15px;
-  background: #222;
-  box-shadow: 5px 5px 0 rgba(9,9,9, 1);
+.projects div.project-item {
+  height: 300px;
+  width: 300px;
+  /*margin: 1em ;*/
+  text-align: left;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
 
-.about .project-detail {
-  padding: 0 1em;
+.projects h3 {
+  margin-bottom: .5em;
 }
-.about .projects h3 {
-  color: #111;
-  padding-top: 1.5em;
-}
-.about .project-item a {
+.projects h4 {
+  font-size: 25px;
+  margin: 220px 0 .5em;
   color: orange;
+}
+.projects a, .projects a:hover {
   text-decoration: none;
 }
 
-.about .project-item img {
-  height: 50%;
-  width: 100%;
+section.job-experience {
+  padding: 4em 0;
+  width: 80%;
+  margin: auto;
 }
-
-.work-detail h3, .community-item-about h3 {
-  font-size: 30px;
-  color: orange;
+.work-company h3 {
+  font-size: 20px;
+  margin: 0;
   text-align: left;
 }
-.work-detail, .community-item-about {
-  margin: 0 2em;
-  border-left: 3px solid #888;
-  padding: 0 1em;
+.work-detail h3, .community-item-about h3 {
+  font-size: 30px;
+  color: #007bff;
+  text-align: left;
+  margin: 0 0 .5em;
 }
-.about .work-detail::before, .community-item-about::before {
+.community-item-about h3 {
+  font-size: 20px;
+}
+.work .work-detail, .community-item-about {
+  margin: 0 2em;
+  border-left: 2px solid orange;
+  padding: 0 1em 3em 2em;
+  height: 100%
+}
+.work-detail::before, .community-item-about::before {
   content: "";
-  background: #111;
-  border: 2px solid #fff;
-  height: 25px;
-  width: 25px;
+  background: #fff;
+  border: 2px solid orange;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
   z-index: 1;
   position: absolute;
   top: 0;
-  left: -2.3%;
-}
-.work-company {
-  text-align: center;
-}
-.work-company img {
-  width: 80%;
-  height: 80%;
-  margin-bottom: 0;
+  left: -8px;
 }
 
 @media  (max-width: 959px) {
-  .about header {
-    height: 30vh;
+  .about {
+    margin: auto;
+    padding: 2em;
+  }
+  .about header{
     display: none;
   }
   .about header h2 {
@@ -142,27 +106,32 @@ section.about-section {
   .about h3 {
     font-size: 40px;
   }
-  .about .work-detail, .community-item-about {
+  .job-experience {
+    /*width: 90%;*/
+    /*margin: inherit auto;*/
+  }
+  .work .work-detail, .community-item-about {
     padding: 0;
     border: none;
     margin: 0 1em;
   }
-  .about .work-detail::before, .community-item-about::before {
+  .work .work-detail::before, .community-item-about::before {
     display: none;
   }
-  .about .work-company {
+
+  .projects {
     text-align: center;
+    margin: 0;
   }
-  .about .work-company img, .community-item img {
-    width: 30%;
-    height: 30%;
+  .project-list {
+    margin: 0;
+  }
+  div.project-item {
+    min-width: 300px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .about article {
-    font-size: 30px;
-  }
   .about .work-company {
     text-align: left;
   }
@@ -182,24 +151,15 @@ section.about-section {
     margin: .5em 0;
   }
 
-  .about .work-detail::before, .community-item-about::before {
-    content: "";
-    background: #111;
-    border: 2px solid #ffffff;
-    height: 25px;
-    width: 25px;
-    z-index: 1;
-    position: absolute;
-    top: .5%;
-    left: -4%;
-    display: block;
+  .work .work-detail, .community-item-about {
+    padding: 0;
+    border: none;
+    margin: 0 1em;
+    text-align: left;
   }
-  .about .work-detail, .community-item-about {
-    margin: 0 2em;
-    border-left: 3px solid #888;
-    padding: 0 1em;
+  .work .work-detail::before, .community-item-about::before {
+    display: none;
   }
-
   .about .project-item {
     height: 530px;
     font-size: 30px;
