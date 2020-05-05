@@ -113,7 +113,7 @@ section.job-experience {
   .work .work-detail, .community-item-about {
     padding: 0;
     border: none;
-    margin: 0 1em;
+    margin: 0 0;
   }
   .work .work-detail::before, .community-item-about::before {
     display: none;
