@@ -14,7 +14,6 @@ import {
   faPhp,
   faLinux,
   faWindows,
-  faDocker,
   faFigma,
   faJenkins,
   faHtml5,
@@ -25,7 +24,7 @@ import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"
 import Footer from "../components/footer"
-import op from "../images/_DSC0054.png"
+import op from "../images/_DSC0054.jpg"
 
 import "../styles/index.css"
 import "../styles/about.css"
@@ -68,7 +67,7 @@ class IndexPage extends React.Component {
     ],
     counter: 0,
     app_counter: 0,
-    app_type: ["scalable", "secure", "highly performant", "have good UX"],
+    app_type: ["scalable", "secure", "high performing", "have good UX"],
   }
 
   updateAppType = () => {
@@ -239,29 +238,29 @@ class IndexPage extends React.Component {
           <div className="col-lg-6">
             <div className="about-section">
               <p className="tdlr">
-                TLDR; <span>Fullstack Engineer</span>,{" "}
-                <span>Technical Writer</span>.
+                TLDR: <span>Fullstack Engineer</span> and
+                <span> Technical Writer</span>.
               </p>
 
               <p>
-                I have being coding for over <span>2+</span>{" "}
-                years focusing mostly on building fullstack web applications as
+                I have been coding for over <span>2</span>{" "}
+                years with experience building fullstack web applications as
                 a freelancer for clients, contributing to open source and
                 working on personal projects. I'm a{" "}
-                <span>stack agnostic developer</span> as I pretty much learn
-                what I need to deliver projects that interest me. Nevertheless,
+                <span>stack agnostic developer,</span> as I pretty much learn
+                what I need to deliver projects. Nevertheless,
                 I have more experience building{" "}
                 <span>fullstack Javascript applications</span> (React for FE and
                 Node for BE), <span>API's</span> (RESTful and GraphQL),
                 persisting data with <span>SQL</span> and <span>NoSQL</span>{" "}
-                database. Recently, I started digging into <span>docker</span>,{" "}
+                databases. Recently, I started digging into <span>Docker</span>,{" "}
                 <span>K8s</span> and <span>cloud computing</span>.
               </p>
 
               <p>
-                When i'm not coding I love to spend my time writing technical
+                When I am not coding I love to spend my time writing technical
                 articles on web technologies and volunteering for developer
-                communities within my region. I'm a{" "}
+                communities. I'm a{" "}
                 <span> GitHub Campus Expert</span> (#GithubEducation),{" "}
                 <span>Co-lead for the Facebook Developer Circles Owerri</span>{" "}
                 (#DevCOwerri) and a <span>Learning Community Ambassador</span>{" "}
@@ -271,7 +270,7 @@ class IndexPage extends React.Component {
               <p>
                 P.S: I love being called <span>kodekage</span> on the internet
                 (it's an aliase I adopted after seeing the great ninja war in
-                the naruto anime series, funny).
+                the Naruto anime series which is my favorite).
               </p>
             </div>
           </div>
@@ -293,7 +292,6 @@ class IndexPage extends React.Component {
               <FontAwesomeIcon color="purple" icon={faPhp} size="5x"/>
               <FontAwesomeIcon color="red" icon={faLaravel} size="5x"/>
               <FontAwesomeIcon color="red" icon={faGitAlt} size='5x'/>
-              <FontAwesomeIcon color="blue" icon={faDocker} size='5x'/>
               <FontAwesomeIcon color="greenplum" icon={faFigma} size='5x'/>
             </div>
             <div className="row no-gutters justify-content-center">
@@ -319,7 +317,7 @@ class IndexPage extends React.Component {
               detail={
                 <>
                 <p>
-                  I build scalable full stack web applications, API's for
+                  I build full stack web applications for
                   clients. My stack includes; <span>MERN</span>,{" "}
                   <span>PHP/Laravel</span>, Database{" "}
                   <span>(Postgresql, MySQL, MongoDB)</span>. Projects I have
@@ -328,17 +326,13 @@ class IndexPage extends React.Component {
                 </p>
                   <ul>
                     <li>
-                      I worked on and delivered the first company portfolio site
-                      for <a href="https://agrohive.com.ng">Agrohive</a>
+                      <a href="https://agrohive.com.ng">Agrohive Website</a> (First company portfolio website)
                     </li>
                     <li>
-                      I worked on the{" "}
-                      <a href="https://alcimo.herokuapp.com">ALC IMO</a>{" "}
-                      community website from designe to deployment.
+                      <a href="https://alcimo.herokuapp.com">GADSIMO</a>{" "} (Learning community website GADS 4.0)
                     </li>
                     <li>
-                      I built an assignment management system using vanilla PHP
-                      (I can't share source code due to NDA with client).
+                      Assignment Management System
                     </li>
                   </ul>
                 </>
@@ -361,7 +355,7 @@ class IndexPage extends React.Component {
 
                 <ul>
                     <li>
-                      Consumed the slack API, and built a Slack app (bot) that
+                      Consumed the slack API and built a Slack app (bot) that
                       stores conversations in channels.
                     </li>
                     <li>
@@ -370,14 +364,14 @@ class IndexPage extends React.Component {
                     </li>
                     <li>
                       Deepened my understanding of versioning using Git and
-                      GitHub for team collaboration.
+                      GitHub for collaboration.
                     </li>
                     <li>
                       Learnt empathy leading a software engineering team which
                       require more than coding skills.
                     </li>
                     <li>
-                      Worked on a php project using the laravel framework.
+                      Worked on a php project using the Laravel framework.
                     </li>
 
                     <strong>Small wins:</strong>
@@ -386,7 +380,7 @@ class IndexPage extends React.Component {
                         I learnt the architecture of Restful API's and how to
                         build one
                       </li>
-                      <li>I got a deeper understanding of Node/Express.</li>
+                      <li>I got a deeper understanding of Node.js/Express.js</li>
                       <li>I worked with the PHP Laravel framework</li>
                     </ol>
 

@@ -37,7 +37,6 @@ hr::before {
   left: 60vw;
   border-radius: 100%;
   background: orange;
-  /*box-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;*/
   margin: 0;
 }
 .bg-img {
