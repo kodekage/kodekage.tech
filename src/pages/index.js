@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
         title: "Personal Site",
         about: "My personal website",
         url: "/",
-      }
+      },
     ],
     counter: 0,
     app_counter: 0,
@@ -101,22 +101,22 @@ class IndexPage extends React.Component {
     this.updateAppType()
 
     const Project = ({ img, title, url }) => (
-        <div
-          className="project-item col-lg-5"
-          style={{
-            background: `linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(${img})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div>
-            <div className="project-detail">
-              <a href={url}>
-                <h4>{title}</h4>
-              </a>
-            </div>
+      <div
+        className="project-item col-lg-5"
+        style={{
+          background: `linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div>
+          <div className="project-detail">
+            <a href={url}>
+              <h4>{title}</h4>
+            </a>
           </div>
         </div>
+      </div>
     )
 
     this.state.project.map((item, index) =>
@@ -243,13 +243,12 @@ class IndexPage extends React.Component {
               </p>
 
               <p>
-                I have been coding for over <span>2</span>{" "}
-                years with experience building fullstack web applications as
-                a freelancer for clients, contributing to open source and
-                working on personal projects. I'm a{" "}
-                <span>stack agnostic developer,</span> as I pretty much learn
-                what I need to deliver projects. Nevertheless,
-                I have more experience building{" "}
+                I have been coding for over <span>2</span> years with experience
+                building fullstack web applications as a freelancer for clients,
+                contributing to open source and working on personal projects.
+                I'm a <span>stack agnostic developer,</span> as I pretty much
+                learn what I need to deliver projects. Nevertheless, I have more
+                experience building{" "}
                 <span>fullstack Javascript applications</span> (React for FE and
                 Node for BE), <span>API's</span> (RESTful and GraphQL),
                 persisting data with <span>SQL</span> and <span>NoSQL</span>{" "}
@@ -260,8 +259,8 @@ class IndexPage extends React.Component {
               <p>
                 When I am not coding I love to spend my time writing technical
                 articles on web technologies and volunteering for developer
-                communities. I'm a{" "}
-                <span> GitHub Campus Expert</span> (#GithubEducation),{" "}
+                communities. I'm a <span> GitHub Campus Expert</span>{" "}
+                (#GithubEducation),{" "}
                 <span>Co-lead for the Facebook Developer Circles Owerri</span>{" "}
                 (#DevCOwerri) and a <span>Learning Community Ambassador</span>{" "}
                 for the Andela Learning Community (#ALCImo)
@@ -279,72 +278,71 @@ class IndexPage extends React.Component {
         <section className="stack text-center" id="stack">
           <div className="container">
             <h4>Technologies I have worked with</h4>
-            <hr/>
+            <hr />
 
             <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="orange" icon={faJsSquare} size="5x"/>
-              <FontAwesomeIcon color="lightgreen" icon={faNodeJs} size="5x"/>
-               <FontAwesomeIcon color="skyblue" icon={faReact} size="5x"/>
-              <FontAwesomeIcon color="purple" icon={faHtml5} size="5x"/>
-              <FontAwesomeIcon color="red" icon={faCss3Alt} size="5x"/>
+              <FontAwesomeIcon color="orange" icon={faJsSquare} />
+              <FontAwesomeIcon color="lightgreen" icon={faNodeJs} />
+              <FontAwesomeIcon color="skyblue" icon={faReact} />
+              <FontAwesomeIcon color="purple" icon={faHtml5} />
+              <FontAwesomeIcon color="red" icon={faCss3Alt} />
             </div>
             <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="purple" icon={faPhp} size="5x"/>
-              <FontAwesomeIcon color="red" icon={faLaravel} size="5x"/>
-              <FontAwesomeIcon color="red" icon={faGitAlt} size='5x'/>
-              <FontAwesomeIcon color="greenplum" icon={faFigma} size='5x'/>
+              <FontAwesomeIcon color="purple" icon={faPhp} />
+              <FontAwesomeIcon color="red" icon={faLaravel} />
+              <FontAwesomeIcon color="red" icon={faGitAlt} />
+              <FontAwesomeIcon color="greenplum" icon={faFigma} />
             </div>
             <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon icon={faJenkins} size='5x'/>
-              <FontAwesomeIcon icon={faGithub} size='5x'/>
-              <FontAwesomeIcon color="blue" icon={faWindows} size='5x'/>
-              <FontAwesomeIcon color="brown" icon={faLinux} size='5x'/>
+              <FontAwesomeIcon icon={faJenkins} />
+              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon color="blue" icon={faWindows} />
+              <FontAwesomeIcon color="brown" icon={faLinux} />
             </div>
           </div>
         </section>
 
         <section className="job-experience" id="jobexperience">
           {/*<div className="container">*/}
-            <h3>Work Experience</h3>
-            <hr />
+          <h3>Work Experience</h3>
+          <hr />
 
-            <Work
-              title="contractor"
-              url="/"
-              company="Freelancing"
-              duration="Jan. 2018 - Present"
-              location="Nigeria"
-              detail={
-                <>
+          <Work
+            title="Contractor"
+            url="/"
+            company="Freelancing"
+            duration="Jan. 2018 - Present"
+            location="Nigeria"
+            detail={
+              <>
                 <p>
-                  I build full stack web applications for
-                  clients. My stack includes; <span>MERN</span>,{" "}
-                  <span>PHP/Laravel</span>, Database{" "}
-                  <span>(Postgresql, MySQL, MongoDB)</span>. Projects I have
-                  worked on;
+                  I build full stack web applications for clients. My stack
+                  includes; <span>MERN</span>, <span>PHP/Laravel</span>,
+                  Database <span>(Postgresql, MySQL, MongoDB)</span>. Projects I
+                  have worked on;
                   {/*<br />*/}
                 </p>
-                  <ul>
-                    <li>
-                      <a href="https://agrohive.com.ng">Agrohive Website</a> (First company portfolio website)
-                    </li>
-                    <li>
-                      <a href="https://alcimo.herokuapp.com">GADSIMO</a>{" "} (Learning community website GADS 4.0)
-                    </li>
-                    <li>
-                      Assignment Management System
-                    </li>
-                  </ul>
-                </>
-              }
-            />
-            <Work
-              title="Fullstack Developer"
-              url="https://hng.tech"
-              company="HNG Internship"
-              location="Nigeria, Remote"
-              detail={
-                <>
+                <ul>
+                  <li>
+                    <a href="https://agrohive.com.ng">Agrohive Website</a>{" "}
+                    (First company portfolio website)
+                  </li>
+                  <li>
+                    <a href="https://alcimo.herokuapp.com">GADSIMO</a> (Learning
+                    community website GADS 4.0)
+                  </li>
+                  <li>Assignment Management System</li>
+                </ul>
+              </>
+            }
+          />
+          <Work
+            title="Fullstack Developer"
+            url="https://hng.tech"
+            company="HNG Internship"
+            location="Nigeria, Remote"
+            detail={
+              <>
                 <p>
                   The HNG internship is a 3-month remote internship designed to
                   find and develop the most talented software developers. The
@@ -354,83 +352,81 @@ class IndexPage extends React.Component {
                 </p>
 
                 <ul>
-                    <li>
-                      Consumed the slack API and built a Slack app (bot) that
-                      stores conversations in channels.
-                    </li>
-                    <li>
-                      Learnt the agile methodology for software development
-                      using pivotal tracker for delivering projects to clients.
-                    </li>
-                    <li>
-                      Deepened my understanding of versioning using Git and
-                      GitHub for collaboration.
-                    </li>
-                    <li>
-                      Learnt empathy leading a software engineering team which
-                      require more than coding skills.
-                    </li>
-                    <li>
-                      Worked on a php project using the Laravel framework.
-                    </li>
+                  <li>
+                    Consumed the slack API and built a Slack app (bot) that
+                    stores conversations in channels.
+                  </li>
+                  <li>
+                    Learnt the agile methodology for software development using
+                    pivotal tracker for delivering projects to clients.
+                  </li>
+                  <li>
+                    Deepened my understanding of versioning using Git and GitHub
+                    for collaboration.
+                  </li>
+                  <li>
+                    Learnt empathy leading a software engineering team which
+                    require more than coding skills.
+                  </li>
+                  <li>Worked on a php project using the Laravel framework.</li>
 
-                    <strong>Small wins:</strong>
-                    <ol>
-                      <li>
-                        I learnt the architecture of Restful API's and how to
-                        build one
-                      </li>
-                      <li>I got a deeper understanding of Node.js/Express.js</li>
-                      <li>I worked with the PHP Laravel framework</li>
-                    </ol>
+                  <strong>Small wins:</strong>
+                  <ol>
+                    <li>
+                      I learnt the architecture of Restful API's and how to
+                      build one
+                    </li>
+                    <li>I got a deeper understanding of Node.js/Express.js</li>
+                    <li>I worked with the PHP Laravel framework</li>
+                  </ol>
 
-                    <strong>Project GitHub URL:</strong>
-                    <ol>
-                      <li>
-                        <a href="https://github.com/OPARA-PROSPER/Dionysus-Slackbot">
-                          {" "}
-                          slackbot{" "}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://github.com/OPARA-PROSPER/lancers">
-                          Lancers
-                        </a>
-                      </li>
-                    </ol>
-                  </ul>
-                </>
-              }
-              duration="Sept. 2019 - Nov. 2019"
-            />
-            <Work
-              title="Technical Writer"
-              url="https://thisdot.co"
-              company="ThisDot Media"
-              location="USA, remote"
-              detail={
-                <>
+                  <strong>Project GitHub URL:</strong>
+                  <ol>
+                    <li>
+                      <a href="https://github.com/OPARA-PROSPER/Dionysus-Slackbot">
+                        {" "}
+                        slackbot{" "}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/OPARA-PROSPER/lancers">
+                        Lancers
+                      </a>
+                    </li>
+                  </ol>
+                </ul>
+              </>
+            }
+            duration="Sept. 2019 - Nov. 2019"
+          />
+          <Work
+            title="Technical Writer"
+            url="https://thisdot.co"
+            company="ThisDot Media"
+            location="USA, remote"
+            detail={
+              <>
                 <p>
                   I was contracted to write detailed articles based on ThisDot
                   Media Yolo brolo series on the company YouTube channel. I
                   delivered two technical articles that were published:
                 </p>
-                  <ol>
-                    <li>
-                      <a href="https://dev.to/thisdotmedia/yolo-brolo-setting-up-gatsby-and-netlify-1732">
-                        Yolo Brolo: setting up gatsby and netlify
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://dev.to/thisdotmedia/yolo-brolo-adding-features-to-your-gatsby-site-21ho">
-                        Yolo Brolo: adding features to your gatsby site
-                      </a>
-                    </li>
-                  </ol>
-                </>
-              }
-              duration="July 2019 - July 2019"
-            />
+                <ol>
+                  <li>
+                    <a href="https://dev.to/thisdotmedia/yolo-brolo-setting-up-gatsby-and-netlify-1732">
+                      Yolo Brolo: setting up gatsby and netlify
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/thisdotmedia/yolo-brolo-adding-features-to-your-gatsby-site-21ho">
+                      Yolo Brolo: adding features to your gatsby site
+                    </a>
+                  </li>
+                </ol>
+              </>
+            }
+            duration="July 2019 - July 2019"
+          />
           {/*</div>*/}
         </section>
 
@@ -496,72 +492,87 @@ class IndexPage extends React.Component {
 
         <section className="speaking-timeline" id="talks">
           {/*<div className="container">*/}
-            <h3>Talks</h3>
-            <hr />
+          <h3>Talks</h3>
+          <hr />
 
-            <Talk
-              key={1}
-              title="Learning: a developer's perspective"
-              talks={[
-                ["Google Developer Group Owerri Info Session", "Feb. 2020"],
-                ["Forloop Aba", "Jan. 2018"],
-                ["Microsoft Student Community FUTO", "Nov. 2019"],
-              ]}
-              label="talk"
-              link="https://speakerdeck.com/opara_prosper79/learning-a-developers-perspective-c6f2f021-3939-46f1-86fe-1108734bd66c"
-            />
-            <Talk
-              key={2}
-              title="Git/GitHub: The basics and beyond"
-              label="workshop"
-              talks={[
-                ["Microsoft Student Community FUTO", "Feb. 2019"],
-                ["Open Source Community Afria Aba", "March 2019"],
-              ]}
-              link="https://speakerdeck.com/opara_prosper79/github-the-basics-and-beyond"
-            />
-            <Talk
-              key={3}
-              title="Intro to HTML5 for game development"
-              label="workshop"
-              talks={[["Developer Circles Owerri Build Day", "Nov 2019"]]}
-              link="#"
-            />
+          <Talk
+            key={1}
+            title="Learning: a developer's perspective"
+            talks={[
+              ["Google Developer Group Owerri Info Session", "Feb. 2020"],
+              ["Forloop Aba", "Jan. 2018"],
+              ["Microsoft Student Community FUTO", "Nov. 2019"],
+            ]}
+            label="talk"
+            link="https://speakerdeck.com/opara_prosper79/learning-a-developers-perspective-c6f2f021-3939-46f1-86fe-1108734bd66c"
+          />
+          <Talk
+            key={2}
+            title="Git/GitHub: The basics and beyond"
+            label="workshop"
+            talks={[
+              ["Microsoft Student Community FUTO", "Feb. 2019"],
+              ["Open Source Community Afria Aba", "March 2019"],
+            ]}
+            link="https://speakerdeck.com/opara_prosper79/github-the-basics-and-beyond"
+          />
+          <Talk
+            key={3}
+            title="Intro to HTML5 for game development"
+            label="workshop"
+            talks={[["Developer Circles Owerri Build Day", "Nov 2019"]]}
+            link="#"
+          />
           {/*</div>*/}
         </section>
 
         <section id="contact" className="contact">
           <h3>Contact Me</h3>
-          <hr/>
-          <div className="row justify-content-center text-center" style={{margin:'auto'}}>
+          <hr />
+          <div
+            className="row justify-content-center text-center"
+            style={{ margin: "auto" }}
+          >
             <div className="svg col-lg-4">
               <a href="https://github.com/OPARA-PROSPER">
-                <FontAwesomeIcon icon={faGithub} size="3x"/>
+                <FontAwesomeIcon icon={faGithub} size="3x" />
               </a>
 
               <a href="https://linkedin.com/in/prosper-opara/">
-                <FontAwesomeIcon icon={faLinkedin } size="3x"/>
+                <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
 
               <a href="https://twitter.com/kodekage">
-                <FontAwesomeIcon icon={faTwitter} size="3x"/>
+                <FontAwesomeIcon icon={faTwitter} size="3x" />
               </a>
 
               <a href="https://dev.to/kodekage">
-                <FontAwesomeIcon icon={faDev} size="3x"/>
+                <FontAwesomeIcon icon={faDev} size="3x" />
               </a>
             </div>
 
-            <div className="col-lg-4 text-left">
+            <div className="col-lg-4 text-left" name="contact-kodekage" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
               <form className="contact-form">
+                <input type="hidden" name="contact-kodekage" value="contact" />
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="what's your name?"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="what's your name?"
+                    name="sender"
+                  />
                 </div>
                 <div className="form-group">
-                  <textarea className="form-control" placeholder="Leave a message for me..."/>
+                  <textarea
+                    className="form-control"
+                    placeholder="Leave a message for me..."
+                    name="message"
+                  />
                 </div>
 
-                <button className="btn-primary" type="submit">Send!</button>
+                <button className="btn-primary" type="submit">
+                  Send!
+                </button>
               </form>
             </div>
           </div>

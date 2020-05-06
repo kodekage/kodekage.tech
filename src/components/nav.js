@@ -18,7 +18,7 @@ export default props => {
       background: "ghostwhite",
       color: "#333",
       width: "100%",
-      overflowX: "hidden"
+      overflowX: "hidden",
     },
   }
 
@@ -46,11 +46,7 @@ export default props => {
             <Link style={navStyle.linkFont} className="nav-link" to="/#about">
               About
             </Link>
-            <Link
-              style={navStyle.linkFont}
-              className="nav-link"
-              to="/#stack"
-            >
+            <Link style={navStyle.linkFont} className="nav-link" to="/#stack">
               Stack
             </Link>
             <Link

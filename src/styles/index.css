@@ -113,6 +113,7 @@ svg {
 }
 .stack svg {
   margin-top: .5em;
+  font-size: 85px;
 }
 
 h3 {
@@ -176,6 +177,9 @@ h3 {
   }
   .bg-img h1 {
     font-size: 30px;
+  }
+  .stack svg {
+    font-size: 50px;
   }
 }
 
