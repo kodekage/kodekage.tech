@@ -275,33 +275,6 @@ class IndexPage extends React.Component {
           </div>
         </section>
 
-        <section className="stack text-center" id="stack">
-          <div className="container">
-            <h4>Technologies I have worked with</h4>
-            <hr />
-
-            <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="orange" icon={faJsSquare} />
-              <FontAwesomeIcon color="lightgreen" icon={faNodeJs} />
-              <FontAwesomeIcon color="skyblue" icon={faReact} />
-              <FontAwesomeIcon color="purple" icon={faHtml5} />
-              <FontAwesomeIcon color="red" icon={faCss3Alt} />
-            </div>
-            <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="purple" icon={faPhp} />
-              <FontAwesomeIcon color="red" icon={faLaravel} />
-              <FontAwesomeIcon color="red" icon={faGitAlt} />
-              <FontAwesomeIcon color="greenplum" icon={faFigma} />
-            </div>
-            <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon icon={faJenkins} />
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon color="blue" icon={faWindows} />
-              <FontAwesomeIcon color="brown" icon={faLinux} />
-            </div>
-          </div>
-        </section>
-
         <section className="job-experience" id="jobexperience">
           {/*<div className="container">*/}
           <h3>Work Experience</h3>
@@ -428,6 +401,33 @@ class IndexPage extends React.Component {
             duration="July 2019 - July 2019"
           />
           {/*</div>*/}
+        </section>
+
+        <section className="stack text-center" id="stack">
+          <div className="container">
+            <h4>Technologies I have worked with</h4>
+            <hr />
+
+            <div className="row no-gutters justify-content-center">
+              <FontAwesomeIcon color="orange" icon={faJsSquare} />
+              <FontAwesomeIcon color="lightgreen" icon={faNodeJs} />
+              <FontAwesomeIcon color="skyblue" icon={faReact} />
+              <FontAwesomeIcon color="purple" icon={faHtml5} />
+              <FontAwesomeIcon color="red" icon={faCss3Alt} />
+            </div>
+            <div className="row no-gutters justify-content-center">
+              <FontAwesomeIcon color="purple" icon={faPhp} />
+              <FontAwesomeIcon color="red" icon={faLaravel} />
+              <FontAwesomeIcon color="red" icon={faGitAlt} />
+              <FontAwesomeIcon color="greenplum" icon={faFigma} />
+            </div>
+            <div className="row no-gutters justify-content-center">
+              <FontAwesomeIcon icon={faJenkins} />
+              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon color="blue" icon={faWindows} />
+              <FontAwesomeIcon color="brown" icon={faLinux} />
+            </div>
+          </div>
         </section>
 
         {/*<section className="projects" id="projects">*/}
