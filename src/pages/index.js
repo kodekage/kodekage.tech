@@ -99,7 +99,14 @@ class IndexPage extends React.Component {
 
     ScrollReveal().reveal(this.refs.box1, config1)
     this.updateAppType()
+  }
 
+  componentWillUnmount = () => {
+    ScrollReveal().clean(this.refs.box1)
+    clearInterval(this.updateAppType())
+  }
+
+  render() {
     const Project = ({ img, title, url }) => (
       <div
         className="project-item col-lg-5"
@@ -119,25 +126,6 @@ class IndexPage extends React.Component {
       </div>
     )
 
-    this.state.project.map((item, index) =>
-      this.projects.push(
-        <Project
-          key={index}
-          img={item.img}
-          title={item.title}
-          about={item.about}
-          url={item.url}
-        />
-      )
-    )
-  }
-
-  componentWillUnmount = () => {
-    ScrollReveal().clean(this.refs.box1)
-    clearInterval(this.updateAppType())
-  }
-
-  render() {
     const Work = ({ url, location, title, company, detail, duration }) => (
       <div className="work row justify-content-center align-items-start no-gutters">
         <div className="work-company col-lg-2 col-md-4 order-lg-0 order-md-1 order-sm-0">
@@ -430,18 +418,38 @@ class IndexPage extends React.Component {
           </div>
         </section>
 
-        {/*<section className="projects" id="projects">*/}
-        {/*  /!*<div className="container">*!/*/}
-        {/*    <h3>Projects</h3>*/}
-        {/*    <hr />*/}
+        <section className="projects" id="projects">
+          {/*<div className="container">*/}
+            <h3>Projects</h3>
+            <hr />
 
-        {/*    <div*/}
-        {/*      className="project-list col justify-content-center align-items-center"*/}
-        {/*    >*/}
-        {/*      {this.projects}*/}
-        {/*    </div>*/}
-        {/*  /!*</div>*!/*/}
-        {/*</section>*/}
+            <div className="row justify-content-around align-items-start">
+              <Project
+                // key={index}
+                img={this.state.project[0].img}
+                title={this.state.project[0].title}
+                about={this.state.project[0].about}
+                url={this.state.project[0].url}
+              />
+
+              <Project
+                // key={index}
+                img={this.state.project[1].img}
+                title={this.state.project[1].title}
+                about={this.state.project[1].about}
+                url={this.state.project[1].url}
+              />
+
+              <Project
+                // key={index}
+                img={this.state.project[2].img}
+                title={this.state.project[2].title}
+                about={this.state.project[2].about}
+                url={this.state.project[2].url}
+              />
+            </div>
+          {/*</div>*/}
+        </section>
 
         <section
           className="community row justify-content-around align-items-center no-gutters"

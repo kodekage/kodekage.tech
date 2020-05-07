@@ -26,15 +26,14 @@
 }
 
 .projects {
-  /*background: #fff;*/
   padding: 0;
   width: 80%;
+  margin: auto;
 }
 
 .projects div.project-item {
   height: 300px;
-  width: 300px;
-  /*margin: 1em ;*/
+  margin-top: 3em ;
   text-align: left;
   font-size: 13px;
   border-radius: 5px;
@@ -121,7 +120,8 @@ section.job-experience {
 
   .projects {
     text-align: center;
-    margin: 0;
+    margin: auto;
+    width: 70%;
   }
   .project-list {
     margin: 0;

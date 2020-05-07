@@ -111,13 +111,21 @@
   .community-item {
     text-align: left;
   }
-  .community-item-about h3, .work-detail h4 {
+  .community-item-about h3 {
+    font-size: 10px;
+    margin: .5em 0;
+    padding: 0 .6em;
+  }
+  .work-detail h4 {
     font-size: 20px;
     margin: .5em 0;
   }
   .community-item h4, .work-detail h3 {
     font-size: 25px;
     margin: 0;
+  }
+  .community-item h4 {
+    font-size: 22px;
   }
   .talk {
     height: 450px;

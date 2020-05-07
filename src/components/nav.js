@@ -53,13 +53,13 @@ export default props => {
             >
               Experience
             </Link>
-            {/*<Link*/}
-            {/*  style={navStyle.linkFont}*/}
-            {/*  className="nav-link"*/}
-            {/*  to="/#projects"*/}
-            {/*>*/}
-            {/*  Projects*/}
-            {/*</Link>*/}
+            <Link
+              style={navStyle.linkFont}
+              className="nav-link"
+              to="/#projects"
+            >
+              Projects
+            </Link>
             <Link
               style={navStyle.linkFont}
               className="nav-link"
