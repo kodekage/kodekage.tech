@@ -32,6 +32,9 @@ import "../styles/community.css"
 
 class IndexPage extends React.Component {
   state = {
+    sender: "",
+    email: "",
+    message: "",
     project: [
       {
         img:
@@ -68,6 +71,47 @@ class IndexPage extends React.Component {
     counter: 0,
     app_counter: 0,
     app_type: ["scalable", "secure", "high performing", "have good UX"],
+  }
+
+  encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+
+  handleContactSubmission = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({
+        'form-name': form.getAttribute('name'),
+        name: this.state.sender,
+        email: this.state.email,
+        message: this.state.message
+      }),
+    })
+      .then(() => alert("Your message was successfully sent"))
+      .catch((error) => alert(error))
+  }
+
+  handleSenderChange = (e) => {
+    this.setState({
+      sender: e.target.value
+    })
+  }
+
+  handleEmailChange = (e) => {
+    this.setState({
+      email: e.target.value
+    })
+  }
+
+  handleMessageChange = (e) => {
+    this.setState({
+      message: e.target.value
+    })
   }
 
   updateAppType = () => {
@@ -561,26 +605,38 @@ class IndexPage extends React.Component {
 
             <div
               className="col-lg-4 text-left"
-              name="contact-kodekage"
+              name="contact"
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              onSubmit={this.handleContactSubmission}
             >
               <form className="contact-form">
-                <input type="hidden" name="contact-kodekage" value="contact" />
+                <input type="hidden" name="contact" value="contact" />
                 <div className="form-group">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="what's your name?"
-                    name="sender"
+                    value={this.state.sender}
+                    onChange={this.handleSenderChange}
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="email address"
+                    value={this.state.email}
+                    onChange={this.handleEmailChange}
                   />
                 </div>
                 <div className="form-group">
                   <textarea
                     className="form-control"
                     placeholder="Leave a message for me..."
-                    name="message"
+                    value={this.state.message}
+                    onChange={this.handleMessageChange}
                   />
                 </div>
 
