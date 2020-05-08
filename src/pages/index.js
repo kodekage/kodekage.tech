@@ -617,6 +617,7 @@ class IndexPage extends React.Component {
                   <input
                     type="text"
                     className="form-control"
+                    name="name"
                     placeholder="what's your name?"
                     value={this.state.sender}
                     onChange={this.handleSenderChange}
@@ -625,6 +626,7 @@ class IndexPage extends React.Component {
                 <div className="form-group">
                   <input
                     type="email"
+                    name="email"
                     className="form-control"
                     placeholder="email address"
                     value={this.state.email}
@@ -634,6 +636,7 @@ class IndexPage extends React.Component {
                 <div className="form-group">
                   <textarea
                     className="form-control"
+                    name="message"
                     placeholder="Leave a message for me..."
                     value={this.state.message}
                     onChange={this.handleMessageChange}
