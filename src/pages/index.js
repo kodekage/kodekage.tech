@@ -612,7 +612,7 @@ class IndexPage extends React.Component {
               onSubmit={this.handleContactSubmission}
             >
               <form className="contact-form">
-                <input type="hidden" name="contact" value="contact" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
                   <input
                     type="text"
