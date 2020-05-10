@@ -104,6 +104,9 @@ section.job-experience {
     border: none;
     margin: 0 0;
   }
+  .work .work-title {
+    margin-bottom: 1.5em;
+  }
   .work .work-detail::before, .community-item-about::before {
     display: none;
   }
