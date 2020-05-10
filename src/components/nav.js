@@ -18,7 +18,7 @@ export default props => {
       background: "ghostwhite",
       color: "#333",
       width: "100%",
-      overflowX: "hidden",
+      borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
     },
   }
 
