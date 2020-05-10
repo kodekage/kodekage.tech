@@ -164,7 +164,7 @@ class IndexPage extends React.Component {
           className="about row justify-content-around no-gutters"
           id="about"
         >
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <div className="about-section">
               <p className="tdlr">
                 TLDR: <span>Fullstack Engineer</span> and
@@ -341,7 +341,7 @@ class IndexPage extends React.Component {
         <section className="stack text-center" id="stack">
           <div className="container">
             <h4>Stack</h4>
-            <hr />
+            {/*<hr />*/}
 
             <div className="row no-gutters justify-content-center">
               <FontAwesomeIcon color="orange" icon={faJsSquare} />
