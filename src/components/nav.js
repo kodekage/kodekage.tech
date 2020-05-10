@@ -27,7 +27,7 @@ export default props => {
         collapseOnSelect
         style={navStyle.bg}
         expand="lg"
-        variant="light"
+        variant="dark"
         fixed="top"
       >
         <Link to="/">
