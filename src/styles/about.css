@@ -2,7 +2,7 @@
   text-align: left;
   padding: 5em 0;
   width: 100%;
-  background: ghostwhite;
+  /*background: ghostwhite;*/
 }
 .about header, .community header {
   width: 100%;
@@ -27,13 +27,13 @@
 
 .projects {
   padding: 0;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
 .projects div.project-item {
   height: 300px;
-  margin-top: 3em ;
+  margin-bottom: 5em ;
   text-align: left;
   font-size: 13px;
   border-radius: 5px;
@@ -42,6 +42,7 @@
 
 .projects h3 {
   margin-bottom: .5em;
+  padding-top: 1em;
 }
 .projects h4 {
   font-size: 25px;
@@ -54,7 +55,7 @@
 
 section.job-experience {
   padding: 4em 0;
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 .work-company h3 {
@@ -92,8 +93,9 @@ section.job-experience {
 
 @media  (max-width: 959px) {
   .about {
-    margin: auto;
-    padding: 2em;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0;
   }
   .about header{
     display: none;
@@ -105,9 +107,10 @@ section.job-experience {
   .about h3 {
     font-size: 40px;
   }
-  .job-experience {
-    /*width: 90%;*/
-    /*margin: inherit auto;*/
+  section.job-experience {
+    width: 90%;
+    margin-top: 0;
+    padding-bottom: 0;
   }
   .work .work-detail, .community-item-about {
     padding: 0;
@@ -119,15 +122,22 @@ section.job-experience {
   }
 
   .projects {
-    text-align: center;
-    margin: auto;
     width: 70%;
+    margin: auto;
+    padding: 0;
   }
   .project-list {
     margin: 0;
   }
-  div.project-item {
+  .projects div.project-item {
     min-width: 300px;
+    height: 200px;
+  }
+  .projects h3 {
+    padding-top: 2em;
+  }
+  .projects h4 {
+    margin-top: 150px;
   }
 }
 
@@ -143,6 +153,9 @@ section.job-experience {
     font-size: 70px;
     margin-bottom: 1em;
   }
+  section.job-experience {
+    width: 90%;
+  }
   .about .work-detail h3 {
     font-size: 50px;
   }
@@ -150,27 +163,15 @@ section.job-experience {
     font-size: 30px;
     margin: .5em 0;
   }
-
-  .work .work-detail, .community-item-about {
-    padding: 0;
-    border: none;
-    margin: 0 1em;
-    text-align: left;
+  .work div.duration {
+    font-size: 14px;
   }
-  .work .work-detail::before, .community-item-about::before {
-    display: none;
-  }
-  .about .project-item {
-    height: 530px;
-    font-size: 30px;
-  }
-  .about .project-item img {
+  .projects div.project-item {
+    min-width: 300px;
     height: 300px;
   }
-  .about .project-detail h4 {
+  .projects div.project-detail h4 {
     font-size: 40px;
-  }
-  .about .projects h3 {
-    padding-top: 1em;
+    margin-top: 220px;
   }
 }

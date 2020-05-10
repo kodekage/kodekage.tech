@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link, useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -9,26 +8,12 @@ import {
   faReact,
   faNodeJs,
   faJsSquare,
-  faGitAlt,
-  faLaravel,
-  faPhp,
-  faLinux,
-  faWindows,
-  faFigma,
-  faJenkins,
-  faHtml5,
-  faCss3Alt,
 } from "@fortawesome/free-brands-svg-icons"
-// import { faPhp} from '@fortawesome/free-solid-svg-icons'
 import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import op from "../images/_DSC0054.jpg"
-
-import "../styles/index.css"
-import "../styles/about.css"
-import "../styles/community.css"
 
 class IndexPage extends React.Component {
   state = {
@@ -73,44 +58,44 @@ class IndexPage extends React.Component {
     app_type: ["scalable", "secure", "high performing", "have good UX"],
   }
 
-  encode = (data) => {
+  encode = data => {
     return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
   }
 
-  handleContactSubmission = (e) => {
+  handleContactSubmission = e => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({
-        'form-name': form.getAttribute('name'),
+        "form-name": form.getAttribute("name"),
         name: this.state.sender,
         email: this.state.email,
-        message: this.state.message
+        message: this.state.message,
       }),
     })
       .then(() => alert("Your message was successfully sent"))
-      .catch((error) => alert(error))
+      .catch(error => alert(error))
   }
 
-  handleSenderChange = (e) => {
+  handleSenderChange = e => {
     this.setState({
-      sender: e.target.value
+      sender: e.target.value,
     })
   }
 
-  handleEmailChange = (e) => {
+  handleEmailChange = e => {
     this.setState({
-      email: e.target.value
+      email: e.target.value,
     })
   }
 
-  handleMessageChange = (e) => {
+  handleMessageChange = e => {
     this.setState({
-      message: e.target.value
+      message: e.target.value,
     })
   }
 
@@ -155,9 +140,10 @@ class IndexPage extends React.Component {
       <div
         className="project-item col-lg-5"
         style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(${img})`,
+          background: `linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url(${img})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
         }}
       >
         <div>
@@ -174,7 +160,7 @@ class IndexPage extends React.Component {
       <div className="work row justify-content-center align-items-start no-gutters">
         <div className="work-company col-lg-2 col-md-4 order-lg-0 order-md-1 order-sm-0">
           <h3>{title}</h3>
-          <div>{duration}</div>
+          <div className="duration">{duration}</div>
         </div>
 
         <div className="work-company col-lg-2 order-lg-2 order-md-0 order-sm-2">
@@ -255,7 +241,7 @@ class IndexPage extends React.Component {
             <h1 ref="box1" className="col">
               Hi, I'm <span>Prosper Opara</span>
               <br />
-              I build fullstack web applications
+              I build web applications
               <br />
               that are{" "}
               <span>{this.state.app_type[this.state.app_counter]}</span>
@@ -299,9 +285,14 @@ class IndexPage extends React.Component {
               </p>
 
               <p>
-                P.S: I love being called <span>kodekage</span> on the internet
-                (it's an aliase I adopted after seeing the great ninja war in
-                the Naruto anime series which is my favorite).
+                P.S: I love being called <span>kodekage</span>
+                (an aliase I adopted after seeing the great ninja war in
+                the Naruto anime series which is my favorite). I gave it meaning
+                and from my perspective it means <span>"I'm responsible for my code"</span>.
+                I'm the lord of my codeland and oversee it's readability, maintainability,
+                cleanliness etc. I'm not a perfect kage but I learn from
+                the complaints of my people (error logs and stack traces) and
+                keep the god's happy (runtime engine).
               </p>
             </div>
           </div>
@@ -437,62 +428,48 @@ class IndexPage extends React.Component {
 
         <section className="stack text-center" id="stack">
           <div className="container">
-            <h4>Technologies I have worked with</h4>
+            <h4>Stack</h4>
             <hr />
 
             <div className="row no-gutters justify-content-center">
               <FontAwesomeIcon color="orange" icon={faJsSquare} />
               <FontAwesomeIcon color="lightgreen" icon={faNodeJs} />
               <FontAwesomeIcon color="skyblue" icon={faReact} />
-              <FontAwesomeIcon color="purple" icon={faHtml5} />
-              <FontAwesomeIcon color="red" icon={faCss3Alt} />
-            </div>
-            <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="purple" icon={faPhp} />
-              <FontAwesomeIcon color="red" icon={faLaravel} />
-              <FontAwesomeIcon color="red" icon={faGitAlt} />
-              <FontAwesomeIcon color="greenplum" icon={faFigma} />
-            </div>
-            <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon icon={faJenkins} />
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon color="blue" icon={faWindows} />
-              <FontAwesomeIcon color="brown" icon={faLinux} />
+              {/*<FontAwesomeIcon color="purple" icon={faPhp} />*/}
+              {/*<FontAwesomeIcon color="red" icon={faLaravel} />*/}
             </div>
           </div>
         </section>
 
         <section className="projects" id="projects">
-          {/*<div className="container">*/}
-            <h3>Projects</h3>
-            <hr />
+          <h3>Projects</h3>
+          <hr />
 
-            <div className="row justify-content-around align-items-start">
-              <Project
-                // key={index}
-                img={this.state.project[0].img}
-                title={this.state.project[0].title}
-                about={this.state.project[0].about}
-                url={this.state.project[0].url}
-              />
+          <div className="row justify-content-between align-items-start">
+            <Project
+              // key={index}
+              img={this.state.project[0].img}
+              title={this.state.project[0].title}
+              about={this.state.project[0].about}
+              url={this.state.project[0].url}
+            />
 
-              <Project
-                // key={index}
-                img={this.state.project[1].img}
-                title={this.state.project[1].title}
-                about={this.state.project[1].about}
-                url={this.state.project[1].url}
-              />
+            <Project
+              // key={index}
+              img={this.state.project[1].img}
+              title={this.state.project[1].title}
+              about={this.state.project[1].about}
+              url={this.state.project[1].url}
+            />
 
-              <Project
-                // key={index}
-                img={this.state.project[2].img}
-                title={this.state.project[2].title}
-                about={this.state.project[2].about}
-                url={this.state.project[2].url}
-              />
-            </div>
-          {/*</div>*/}
+            <Project
+              // key={index}
+              img={this.state.project[2].img}
+              title={this.state.project[2].title}
+              about={this.state.project[2].about}
+              url={this.state.project[2].url}
+            />
+          </div>
         </section>
 
         <section
@@ -582,24 +559,24 @@ class IndexPage extends React.Component {
           <h3>Contact Me</h3>
           <hr />
           <div
-            className="row justify-content-center text-center"
+            className="row justify-content-center align-items-center text-center"
             style={{ margin: "auto" }}
           >
             <div className="svg col-lg-4">
               <a href="https://github.com/OPARA-PROSPER">
-                <FontAwesomeIcon icon={faGithub} size="3x" />
+                <FontAwesomeIcon icon={faGithub} />
               </a>
 
               <a href="https://linkedin.com/in/prosper-opara/">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
 
               <a href="https://twitter.com/kodekage">
-                <FontAwesomeIcon icon={faTwitter} size="3x" />
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
 
               <a href="https://dev.to/kodekage">
-                <FontAwesomeIcon icon={faDev} size="3x" />
+                <FontAwesomeIcon icon={faDev} />
               </a>
             </div>
 
