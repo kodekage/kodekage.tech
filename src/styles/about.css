@@ -81,7 +81,7 @@ section.job-experience {
 @media  (max-width: 959px) {
   .about {
     width: 90%;
-    margin: 0 auto;
+    margin: 2em auto 0;
     padding: 1em;
   }
   .about header{
