@@ -15,7 +15,8 @@
 
 .community-item h4 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .community article {
@@ -111,11 +112,11 @@
     margin: 0;
   }
   .community-item h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
   .talk {
     height: 300px;
-    width: 80%;
+    width: 90%;
   }
   .talk h4 {
     font-size: 20px;

@@ -79,7 +79,7 @@ svg {
   left: 0;
 }
 .stack svg {
-  color: #333;
+  /*color: #333;*/
   font-size: 100em;
 }
 .stack {
