@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="layout" style={{ overflow: "hidden", maxWidth: "100%"}}>
+    <div className="layout" style={{ overflow: "hidden", maxWidth: "100%" }}>
       <Nav short_name={data.site.siteMetadata.short_name} />
       {children}
     </div>

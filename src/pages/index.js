@@ -13,6 +13,11 @@ import ScrollReveal from "scrollreveal"
 
 import Layout from "../components/layout"
 import Footer from "../components/footer"
+import Project from "../components/project"
+import CommunityDetail from "../components/communitydetail"
+import Talk from "../components/talk"
+import Work from "../components/work"
+
 import op from "../images/_DSC0054.jpg"
 
 class IndexPage extends React.Component {
@@ -136,100 +141,6 @@ class IndexPage extends React.Component {
   }
 
   render() {
-    const Project = ({ img, title, url }) => (
-      <div
-        className="project-item col-lg-5"
-        style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url(${img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}
-      >
-        <div>
-          <div className="project-detail">
-            <a href={url}>
-              <h4>{title}</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-    )
-
-    const Work = ({ url, location, title, company, detail, duration }) => (
-      <div className="work row justify-content-center align-items-start no-gutters">
-        <div className="work-company col-lg-2 col-md-4 order-lg-0 order-md-1 order-sm-0">
-          <h3>{title}</h3>
-          <div className="duration">{duration}</div>
-        </div>
-
-        <div className="work-company col-lg-2 order-lg-2 order-md-0 order-sm-2">
-          <h3>{location}</h3>
-        </div>
-
-        <div className="work-detail col-lg col-md order-lg-1 order-md-2 col-s order-sm-1">
-          <div className="work-title">
-            <h3>
-              <a href={url}>{company}</a>
-            </h3>
-          </div>
-          {detail}
-        </div>
-      </div>
-    )
-
-    const CommunityDetail = ({
-      title,
-      duration,
-      experience_url,
-      community,
-    }) => (
-      <div className="about-community row justify-content-between">
-        <div className="community-item col-lg-4 col-md-4">
-          <div style={{ fontSize: "15px" }}>
-            <h4>{title}</h4>
-            <span>{duration}</span>
-          </div>
-        </div>
-
-        <div className="community-item-about col-lg col-md">
-          <a href={experience_url}>
-            <h3>{community}</h3>
-          </a>
-        </div>
-
-        <div
-          className="col-lg-2 col-md"
-          style={{ fontSize: "15px", fontWeight: "600" }}
-        >
-          Owerri, Nigeria
-        </div>
-      </div>
-    )
-
-    const Talk = ({ title, talks, link }) => (
-      <div className="talk">
-        <div className="talk-detail">
-          <a href={link}>
-            <h4>{title}</h4>
-          </a>
-        </div>
-
-        <hr />
-
-        <div className="talk-event">
-          <div>
-            <h4>Presentations</h4>
-            {talks.map((item, index) => (
-              <h5 key={index}>
-                {item[0]} <i>{item[1]}</i>
-              </h5>
-            ))}
-          </div>
-        </div>
-      </div>
-    )
-
     return (
       <Layout>
         <header className="App-header">
@@ -286,13 +197,14 @@ class IndexPage extends React.Component {
 
               <p>
                 P.S: I love being called <span>kodekage</span>
-                (an aliase I adopted after seeing the great ninja war in
-                the Naruto anime series which is my favorite). I gave it meaning
-                and from my perspective it means <span>"I'm responsible for my code"</span>.
-                I'm the lord of my codeland and oversee it's readability, maintainability,
-                cleanliness etc. I'm not a perfect kage but I learn from
-                the complaints of my people (error logs and stack traces) and
-                keep the god's happy (runtime engine).
+                (an aliase I adopted after seeing the great ninja war in the
+                Naruto anime series which is my favorite). I gave it meaning and
+                from my perspective it means{" "}
+                <span>"I'm responsible for my code"</span>. I'm the lord of my
+                codeland and oversee it's readability, maintainability,
+                cleanliness etc. I'm not a perfect kage but I learn from the
+                complaints of my people (error logs and stack traces) and keep
+                the god's happy (runtime engine).
               </p>
             </div>
           </div>

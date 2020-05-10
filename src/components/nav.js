@@ -13,12 +13,13 @@ export default props => {
       color: "#222",
       margin: "0",
       fontWeight: "600",
+      fontFamily: "'Abel', sans-serif",
     },
     bg: {
       background: "ghostwhite",
       color: "#333",
       width: "100%",
-      borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
+      borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
     },
   }
 
@@ -32,12 +33,7 @@ export default props => {
         fixed="top"
       >
         <Link to="/">
-          <Navbar.Brand style={navStyle.headingFont}>
-            kodekage
-            {/*<span style={{ color: "orange", fontWeight: "900" }}>*/}
-            {/*  {props.short_name}*/}
-            {/*</span>*/}
-          </Navbar.Brand>
+          <Navbar.Brand style={navStyle.headingFont}>kodekage</Navbar.Brand>
         </Link>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
