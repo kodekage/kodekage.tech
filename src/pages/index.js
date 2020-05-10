@@ -211,7 +211,6 @@ class IndexPage extends React.Component {
         </section>
 
         <section className="job-experience" id="jobexperience">
-          {/*<div className="container">*/}
           <h3>Work Experience</h3>
           <hr />
 
@@ -335,20 +334,16 @@ class IndexPage extends React.Component {
             }
             duration="July 2019 - July 2019"
           />
-          {/*</div>*/}
         </section>
 
         <section className="stack text-center" id="stack">
           <div className="container">
             <h4>Stack</h4>
-            {/*<hr />*/}
 
             <div className="row no-gutters justify-content-center">
               <FontAwesomeIcon color="orange" icon={faJsSquare} />
-              <FontAwesomeIcon color="lightgreen" icon={faNodeJs} />
+              <FontAwesomeIcon color="green" icon={faNodeJs} />
               <FontAwesomeIcon color="skyblue" icon={faReact} />
-              {/*<FontAwesomeIcon color="purple" icon={faPhp} />*/}
-              {/*<FontAwesomeIcon color="red" icon={faLaravel} />*/}
             </div>
           </div>
         </section>
@@ -359,7 +354,6 @@ class IndexPage extends React.Component {
 
           <div className="row justify-content-between align-items-start">
             <Project
-              // key={index}
               img={this.state.project[0].img}
               title={this.state.project[0].title}
               about={this.state.project[0].about}
@@ -367,7 +361,6 @@ class IndexPage extends React.Component {
             />
 
             <Project
-              // key={index}
               img={this.state.project[1].img}
               title={this.state.project[1].title}
               about={this.state.project[1].about}
@@ -375,7 +368,6 @@ class IndexPage extends React.Component {
             />
 
             <Project
-              // key={index}
               img={this.state.project[2].img}
               title={this.state.project[2].title}
               about={this.state.project[2].about}
@@ -432,7 +424,6 @@ class IndexPage extends React.Component {
         </section>
 
         <section className="speaking-timeline" id="talks">
-          {/*<div className="container">*/}
           <h3>Talks</h3>
           <hr />
 
@@ -464,12 +455,12 @@ class IndexPage extends React.Component {
             talks={[["Developer Circles Owerri Build Day", "Nov 2019"]]}
             link="#"
           />
-          {/*</div>*/}
         </section>
 
         <section id="contact" className="contact">
           <h3>Contact Me</h3>
           <hr />
+
           <div
             className="row justify-content-center align-items-center text-center"
             style={{ margin: "auto" }}
@@ -502,6 +493,7 @@ class IndexPage extends React.Component {
             >
               <form className="contact-form">
                 <input type="hidden" name="form-name" value="contact" />
+
                 <div className="form-group">
                   <input
                     type="text"
@@ -512,6 +504,7 @@ class IndexPage extends React.Component {
                     onChange={this.handleSenderChange}
                   />
                 </div>
+
                 <div className="form-group">
                   <input
                     type="email"
@@ -522,6 +515,7 @@ class IndexPage extends React.Component {
                     onChange={this.handleEmailChange}
                   />
                 </div>
+
                 <div className="form-group">
                   <textarea
                     className="form-control"
