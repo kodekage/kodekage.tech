@@ -6,19 +6,18 @@ export default props => {
   const navStyle = {
     linkFont: {
       fontSize: "16px",
-      color: "#222",
+      color: "#fff",
     },
     headingFont: {
       fontSize: "25px",
-      color: "#222",
+      color: "#fff",
       margin: "0",
       fontWeight: "600",
     },
     bg: {
-      background: "ghostwhite",
-      color: "#333",
+      background: "rgba(0,23,177,0.9)",
       width: "100%",
-      borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+      borderBottom: "1px solid rgba(225, 225, 225, 0.5)",
     },
   }
 

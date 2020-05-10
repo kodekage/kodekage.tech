@@ -1,7 +1,7 @@
 .App-header {
   height: 90vh;
   width: 100%;
-  background: linear-gradient(rgba(225, 225, 225, .8), rgba(225, 225, 225, .9), rgba(225, 225, 225, 1)), url("../images/prosper.jpg");
+  background: linear-gradient(168deg, rgba(19,49,192,.7) 35%, rgba(4,8,107,1) 100%), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_900/v1586561707/op_tzhnyp.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ hr::before {
   background: transparent;
   position: absolute;
   right: 0;
-  top: 25vh;
+  top: 22vh;
   bottom: inherit;
 }
 .App-header .img img {
@@ -35,8 +35,9 @@ hr::before {
   height: 20%;
   position: relative;
   left: 55vw;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+  /*border-radius: 10px;*/
+  /*border: 5px solid rgba(255, 255, 255, 0.6);*/
+  box-shadow: rgba(255, 255, 255, 0.9) 10px 10px 1px 0px;
   margin: 0;
 }
 .bg-img {
@@ -49,9 +50,12 @@ hr::before {
 .bg-img h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #0D219F;
+  color: #fff;
   margin: 0 0 3em;
   visibility: hidden;
+}
+.bg-img h1 span {
+  color: #ffb723;
 }
 
 .svg {
@@ -77,7 +81,7 @@ svg {
   left: 0;
 }
 .stack svg {
-  /*color: #333;*/
+  color: #DF1995;
   font-size: 100em;
 }
 .stack {
@@ -88,12 +92,12 @@ svg {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
-.stack h3 {
-  padding: 1em 0 0;
-}
+
 .stack h4 {
   margin: 1em 0 .5em;
   font-size: 35px;
+  color: #555;
+  font-weight: 600;
 }
 .stack svg {
   margin-top: .5em;
@@ -102,7 +106,7 @@ svg {
 
 h3 {
   font-size: 50px;
-  color: #0D219F;
+  color: #444;
   font-weight: 900;
   margin: 0 0;
   text-align: center;

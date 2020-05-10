@@ -7,30 +7,10 @@
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
-.about header, .community header {
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  transform: rotate(10deg);
-  border-radius: 0;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 15px 15px 5px rgba(0, 0, 0, .5);
-  cursor: pointer;
-}
-.about header img {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.about header:hover, .community header:hover {
-  transform: rotate(0);
-  border: 3px solid #fff;
-}
 
 .projects {
   padding: 0;
-  width: 60%;
+  width: 95%;
   margin: auto;
 }
 
@@ -49,8 +29,11 @@
 }
 .projects h4 {
   font-size: 25px;
-  margin: 220px 0 .5em;
-  color: orange;
+  font-weight: 600;
+  margin: 200px 0 .5em;
+  color: #111;
+  padding: .1em .5em;
+  background: #f3a100;
 }
 .projects a, .projects a:hover {
   text-decoration: none;
@@ -65,11 +48,11 @@ section.job-experience {
   font-size: 20px;
   margin: 0;
   text-align: left;
-  color: #333333;
+  color: #555;
 }
 .work-detail h3, .community-item-about h3 {
-  font-size: 30px;
-  color: #0D219F;
+  font-size: 25px;
+  color: rgba(13, 33, 159, 0.8);
   text-align: left;
   margin: 0 0 .5em;
 }
@@ -134,14 +117,14 @@ section.job-experience {
     margin: 0;
   }
   .projects div.project-item {
-    min-width: 300px;
-    height: 200px;
+    height: 220px;
   }
   .projects h3 {
     padding-top: 2em;
   }
   .projects h4 {
     margin-top: 150px;
+    font-size: 20px;
   }
 }
 
@@ -171,11 +154,10 @@ section.job-experience {
     font-size: 14px;
   }
   .projects div.project-item {
-    min-width: 300px;
-    height: 300px;
+    height: 320px;
   }
   .projects div.project-detail h4 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 220px;
   }
 }

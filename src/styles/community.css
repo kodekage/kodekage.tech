@@ -64,6 +64,7 @@
 }
 .talk i {
   float: right;
+  font-size: 15px;
 }
 .talk p {
   color: #777;

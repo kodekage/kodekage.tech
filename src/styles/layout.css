@@ -30,7 +30,7 @@ body {
 .tdlr {
   font-weight: 900;
   font-size: 33px;
-  color: #0D219F;
+  color: #DF1995;
 }
 
 a.nav-link {
@@ -38,7 +38,7 @@ a.nav-link {
   width: 100%;
 }
 a {
-  color: orange;
+  color: rgba(13, 33, 159, 0.86);
 }
 a:hover {
   color: orange;
