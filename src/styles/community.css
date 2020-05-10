@@ -19,14 +19,6 @@
   font-weight: 600;
 }
 
-.community article {
-  color: #333;
-  font-size: 20px;
-}
-
-.community section {
-  padding: 5em 1em 1em;
-}
 
 .speaking-timeline {
   padding: 5em 0 0;
@@ -82,13 +74,6 @@
   .community {
     text-align: left;
   }
-  .community header {
-    display: none;
-  }
-  .community header h2 {
-    padding-top: 20%;
-    font-size: 40px;
-  }
   .about-community {
     border: 1px solid #fff;
     border-radius: 10px;
@@ -100,7 +85,7 @@
     text-align: left;
   }
   .community-item-about h3 {
-    font-size: 13px;
+    font-size: 16px;
     margin: .5em 0;
     padding: 0 1.2em;
   }
@@ -132,15 +117,6 @@
     text-align: left;
     font-size: 25px;
   }
-  .community-item img {
-    width: 20%;
-    height: 20%;
-  }
-
-  .community header h2 {
-    padding-top: 20%;
-    /*font-size: 200%/1em;*/
-  }
   .about-community div.community-item-about h3 {
     font-size: 16px;
     margin: .5em 0;
@@ -149,9 +125,6 @@
 
   .community-item h4 {
     font-size: 20px;
-  }
-  .community-item span {
-    font-size: 14px;
   }
   .talk {
     height: 300px;

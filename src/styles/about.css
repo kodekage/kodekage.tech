@@ -84,13 +84,6 @@ section.job-experience {
     margin: 2em auto 0;
     padding: 1em;
   }
-  .about header{
-    display: none;
-  }
-  .about header h2 {
-    margin-top: 20%;
-    font-size: 40px;
-  }
   .about h3 {
     font-size: 40px;
   }
@@ -99,6 +92,13 @@ section.job-experience {
     margin-top: 0;
     padding-bottom: 0;
   }
+  .work {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+    background: #fff;
+    padding: 1em;
+    margin: 2em auto;
+  }
+
   .work .work-detail, .community-item-about {
     padding: 0;
     border: none;
@@ -106,6 +106,9 @@ section.job-experience {
   }
   .work .work-detail::before, .community-item-about::before {
     display: none;
+  }
+  .work .location {
+    font-size: 15px;
   }
 
   .projects {
