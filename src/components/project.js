@@ -2,9 +2,9 @@ import React from "react"
 
 const Project = ({ img, title, url }) => (
   <div
-    className="project-item col-lg-5"
+    className="project-item col-lg-3"
     style={{
-      background: `linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url(${img})`,
+      background: `linear-gradient(180deg, rgba(225, 225, 225, .5), rgba(225, 255, 225, .3), rgba(255, 255, 255, .5)), url(${img})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",

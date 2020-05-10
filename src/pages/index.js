@@ -150,7 +150,7 @@ class IndexPage extends React.Component {
           </div>
           <div className="bg-img row align-items-center justify-content-center">
             <h1 ref="box1" className="col">
-              Hi, I'm <span>Prosper Opara</span>.
+              Hi, I'm Prosper Opara.
               <br />
               I build web applications
               <br />
@@ -352,7 +352,7 @@ class IndexPage extends React.Component {
           <h3>Projects</h3>
           <hr />
 
-          <div className="row justify-content-between align-items-start">
+          <div className="row justify-content-around align-items-start">
             <Project
               img={this.state.project[0].img}
               title={this.state.project[0].title}
@@ -417,7 +417,7 @@ class IndexPage extends React.Component {
                 img="https://res.cloudinary.com/github-com-opara-prosper/image/upload/v1586561682/osca_baceyc.png"
                 title="Community Lead"
                 duration="July 2018 - Jan. 2019"
-                experience_url="https://alcimo.herokuapp.com"
+                experience_url="https://blog.oscafrica.org/growing-with-open-source-in-imo-state-cjyzmasvd003f4zs1gtvgw939"
               />
             </div>
           </div>
@@ -526,7 +526,7 @@ class IndexPage extends React.Component {
                   />
                 </div>
 
-                <button className="btn-primary" type="submit">
+                <button className="btn btn-primary" type="submit">
                   Send!
                 </button>
               </form>
