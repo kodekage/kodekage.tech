@@ -1,7 +1,10 @@
 .App-header {
-  color: orange;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
+  background: linear-gradient(rgba(225, 225, 225, .8), rgba(225, 225, 225, .9), rgba(225, 225, 225, 1)), url("../images/prosper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 hr {
   width: 300px;
@@ -24,16 +27,15 @@ hr::before {
   background: transparent;
   position: absolute;
   right: 0;
-  top: 15vh;
+  top: 25vh;
   bottom: inherit;
 }
 .App-header .img img {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   position: relative;
-  left: 60vw;
-  border-radius: 100%;
-  border: 5px solid whitesmoke;
+  left: 55vw;
+  /*border-radius: 100%;*/
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
   margin: 0;
 }
@@ -44,14 +46,10 @@ hr::before {
   margin: 30vh auto 10vh;
 }
 
-.bg-img span {
-  color: orange;
-}
-
 .bg-img h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #333;
+  color: #0D219F;
   margin: 0 0 3em;
   visibility: hidden;
 }
@@ -104,7 +102,7 @@ svg {
 
 h3 {
   font-size: 50px;
-  color: #333;
+  color: #0D219F;
   font-weight: 900;
   margin: 0 0;
   text-align: center;
@@ -135,7 +133,7 @@ h3 {
   .App-header {
     margin: 0;
     padding: 0;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
   }
   .bg-img {
@@ -152,6 +150,7 @@ h3 {
   .App-header .img {
     width: 60%;
     left: 10vh;
+    top: 15vh;
   }
   h3 {
     font-size: 30px;

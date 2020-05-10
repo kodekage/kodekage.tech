@@ -13,7 +13,6 @@ export default props => {
       color: "#222",
       margin: "0",
       fontWeight: "600",
-      fontFamily: "'Abel', sans-serif",
     },
     bg: {
       background: "ghostwhite",
