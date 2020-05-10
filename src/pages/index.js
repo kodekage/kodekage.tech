@@ -239,7 +239,7 @@ class IndexPage extends React.Component {
           </div>
           <div className="bg-img row align-items-center justify-content-center">
             <h1 ref="box1" className="col">
-              Hi, I'm <span>Prosper Opara</span>
+              Hi, I'm <span>Prosper Opara</span>.
               <br />
               I build web applications
               <br />
