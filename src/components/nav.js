@@ -5,7 +5,7 @@ import { Navbar, Nav } from "react-bootstrap"
 export default props => {
   const navStyle = {
     linkFont: {
-      fontSize: "17px",
+      fontSize: "16px",
       color: "#222",
     },
     headingFont: {

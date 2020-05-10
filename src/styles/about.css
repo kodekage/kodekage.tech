@@ -1,8 +1,11 @@
 .about {
   text-align: left;
   padding: 5em 0;
-  width: 100%;
-  /*background: ghostwhite;*/
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
 .about header, .community header {
   width: 100%;
@@ -95,7 +98,7 @@ section.job-experience {
   .about {
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 0;
+    padding: 1em;
   }
   .about header{
     display: none;

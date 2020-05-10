@@ -1,8 +1,11 @@
 .community {
   text-align: left;
   padding: 5em 0;
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
 
 .community h2 {

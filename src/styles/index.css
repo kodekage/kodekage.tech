@@ -83,9 +83,12 @@ svg {
   font-size: 100em;
 }
 .stack {
-  padding: .5em 0 3em;
-  width: 100%;
+  background: #fff;
+  padding: .5em 0 4em;
+  width: 50%;
   margin: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
 }
 .stack h3 {
   padding: 1em 0 0;
@@ -169,6 +172,9 @@ h3 {
   .stack svg {
     font-size: 50px;
   }
+  .stack {
+    width: 80%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -191,7 +197,10 @@ h3 {
     margin-top: 60vh;
     width: 100%;
   }
-
+  .stack {
+    width: 60%;
+    margin-top: 1em;
+  }
   .contact {
     width: 80%;
     margin: auto;
