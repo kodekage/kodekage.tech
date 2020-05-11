@@ -60,7 +60,7 @@ class IndexPage extends React.Component {
     ],
     counter: 0,
     app_counter: 0,
-    app_type: ["scalable", "secure", "high performing", "have good UX"],
+    app_type: ["are scalable", "are secure", "are high performing", "have good UX"],
   }
 
   encode = data => {
@@ -154,7 +154,7 @@ class IndexPage extends React.Component {
               <br />
               I build web applications
               <br />
-              that are{" "}
+              that {" "}
               <span>{this.state.app_type[this.state.app_counter]}</span>
             </h1>
           </div>
