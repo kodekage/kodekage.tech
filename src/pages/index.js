@@ -181,7 +181,7 @@ class IndexPage extends React.Component {
                 learn what I need to deliver projects. Nevertheless, I have more
                 experience building{" "}
                 <span>fullstack Javascript applications</span> (React for FE and
-                Node for BE), <span>API's</span> (RESTful and GraphQL),
+                Node for BE), PHP/Laravel powered applications, <span>API's</span> (RESTful and GraphQL),
                 persisting data with <span>SQL</span> and <span>NoSQL</span>{" "}
                 databases. Recently, I started digging into <span>Docker</span>,{" "}
                 <span>K8s</span> and <span>cloud computing</span>.
