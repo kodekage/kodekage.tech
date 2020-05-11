@@ -8,6 +8,8 @@ import {
   faReact,
   faNodeJs,
   faJsSquare,
+  faPhp,
+  faLaravel
 } from "@fortawesome/free-brands-svg-icons"
 import ScrollReveal from "scrollreveal"
 
@@ -344,6 +346,8 @@ class IndexPage extends React.Component {
               <FontAwesomeIcon color="orange" icon={faJsSquare} />
               <FontAwesomeIcon color="green" icon={faNodeJs} />
               <FontAwesomeIcon color="skyblue" icon={faReact} />
+              <FontAwesomeIcon icon={faPhp}/>
+              <FontAwesomeIcon icon={faLaravel}/>
             </div>
           </div>
         </section>
