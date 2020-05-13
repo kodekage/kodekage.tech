@@ -25,6 +25,7 @@ export default props => {
     <>
       <Navbar
         collapseOnSelect
+        // expanded={true}
         style={navStyle.bg}
         expand="lg"
         variant="dark"
@@ -37,36 +38,36 @@ export default props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Link style={navStyle.linkFont} className="nav-link" to="/#about">
+            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#about">
               About
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
               style={navStyle.linkFont}
               className="nav-link"
-              to="/#jobexperience"
+              href="/#jobexperience"
             >
               Experience
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
               style={navStyle.linkFont}
               className="nav-link"
-              to="/#projects"
+              href="/#projects"
             >
               Projects
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
               style={navStyle.linkFont}
               className="nav-link"
-              to="/#community"
+              href="/#community"
             >
               Community
-            </Link>
-            <Link style={navStyle.linkFont} className="nav-link" to="/#talks">
+            </Nav.Link>
+            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#talks">
               Talks
-            </Link>
-            <Link style={navStyle.linkFont} className="nav-link" to="/#contact">
+            </Nav.Link>
+            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#contact">
               Contact
-            </Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
