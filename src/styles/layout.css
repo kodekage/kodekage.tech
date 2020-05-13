@@ -30,7 +30,8 @@ body {
 .tdlr {
   font-weight: 900;
   font-size: 33px;
-  color: #DF1995;
+  /*color: #DF1995;*/
+  color: #ffb723;
 }
 
 a.nav-link {

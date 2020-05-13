@@ -81,11 +81,11 @@ svg {
   left: 0;
 }
 .stack svg {
-  color: #DF1995;
+  color: #fff;
   font-size: 100em;
 }
 .stack {
-  background: #fff;
+  background: rgba(0,23,177,0.9);
   padding: .5em 0 4em;
   width: 50%;
   margin: auto;
@@ -96,7 +96,7 @@ svg {
 .stack h4 {
   margin: 1em 0 .5em;
   font-size: 35px;
-  color: #555;
+  color: #ffb723;
   font-weight: 600;
 }
 .stack svg {
@@ -106,7 +106,7 @@ svg {
 
 h3 {
   font-size: 50px;
-  color: #444;
+  color: #ffb723;
   font-weight: 900;
   margin: 0 0;
   text-align: center;
