@@ -1,5 +1,5 @@
 .App-header {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(168deg, rgba(19,49,192,.7) 35%, rgba(4,8,107,1) 100%), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_900/v1586561707/op_tzhnyp.jpg");
   background-position: center;
@@ -27,7 +27,7 @@ hr::before {
   background: transparent;
   position: absolute;
   right: 0;
-  top: 22vh;
+  top: 33vh;
   bottom: inherit;
 }
 .App-header .img img {
@@ -35,16 +35,16 @@ hr::before {
   height: 20%;
   position: relative;
   left: 55vw;
-  /*border-radius: 10px;*/
-  /*border: 5px solid rgba(255, 255, 255, 0.6);*/
-  box-shadow: rgba(255, 255, 255, 0.9) 10px 10px 1px 0px;
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, .9);
+  /*box-shadow: rgba(255, 255, 255, 1) 10px 10px 1px 0px;*/
   margin: 0;
 }
 .bg-img {
   width: 60%;
   position: relative;
   text-align: left;
-  margin: 30vh auto 10vh;
+  margin: 40vh auto 10vh;
 }
 
 .bg-img h1 {
@@ -176,6 +176,9 @@ h3 {
   }
   .stack {
     width: 80%;
+  }
+  .contact h3 {
+    padding-top: 2.5em;
   }
 }
 
