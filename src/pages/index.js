@@ -217,31 +217,18 @@ class IndexPage extends React.Component {
           <hr />
 
           <Work
-            title="Contractor"
-            url="/"
-            company="Freelancing"
-            duration="Jan. 2018 - Present"
-            location="Nigeria"
+            title="Freelance Software Engineer"
+            url="https://tunga.io/network/Prosper_Opara"
+            company="Tunga"
+            duration="May 2020 - Present"
+            location="Remote"
             detail={
               <>
                 <p>
-                  I build full stack web applications for clients. My stack
+                  I build full stack web applications for Tunga clients. My stack
                   includes; <span>MERN</span>, <span>PHP/Laravel</span>,
-                  Database <span>(Postgresql, MySQL, MongoDB)</span>. Projects I
-                  have worked on;
-                  {/*<br />*/}
+                  Database <span>(Postgresql, MySQL, MongoDB)</span>.
                 </p>
-                <ul>
-                  <li>
-                    <a href="https://agrohive.com.ng">Agrohive Website</a>{" "}
-                    (First company portfolio website)
-                  </li>
-                  <li>
-                    <a href="https://alcimo.herokuapp.com">GADSIMO</a> (Learning
-                    community website GADS 4.0)
-                  </li>
-                  <li>Assignment Management System</li>
-                </ul>
               </>
             }
           />
@@ -308,6 +295,27 @@ class IndexPage extends React.Component {
             }
             duration="Sept. 2019 - Nov. 2019"
           />
+
+          <Work
+            title="Technical Lead"
+            url="https://agrohive.com.ng/"
+            company="Agrohive"
+            duration="Nov. 2018 - May. 2019"
+            location="Owerri, Nigeria"
+            detail={
+              <>
+                <p>
+                  During my time as the technical lead at Agrohive:
+                </p>
+                <ul>
+                  <li>I built the first company portfolio site which helped increase brand visibility on the internet.</li>
+                  <li>I managed the servers hosting the companies site.</li>
+                  <li>I maintained the web platform and squashed production bugs as they occurred.</li>
+                </ul>
+              </>
+            }
+          />
+
           <Work
             title="Technical Writer"
             url="https://thisdot.co"
