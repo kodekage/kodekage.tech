@@ -12,7 +12,7 @@ const CommunityDetail = ({ title, duration, experience_url, community }) => (
     </div>
 
     <div className="community-item-about col-lg col-md">
-      <a href={experience_url}>
+      <a href={experience_url} rel="noopener noreferrer" target="_blank">
         <h3><FontAwesomeIcon icon={faLink}/> {community}</h3>
       </a>
     </div>
