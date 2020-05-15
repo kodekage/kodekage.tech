@@ -8,4 +8,9 @@ the complaints of my people (error logs and stack traces) and keep the god's hap
 
 > **kodekage** is an aliase I adopted after seeing the great ninja war in the Naruto anime series which is my favorite.
 
+### Light House Metrics
+Date: 15th May 2020
+
+![kodekage-netlify](https://user-images.githubusercontent.com/30195980/82043865-34a12380-96a4-11ea-9bbb-bcf7647d983f.PNG)
+
 ### Live version: https://kodekage.netlify.app
