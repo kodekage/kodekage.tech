@@ -1,12 +1,15 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLink} from '@fortawesome/free-solid-svg-icons'
+import { faLink } from "@fortawesome/free-solid-svg-icons"
 
 const Talk = ({ title, talks, link }) => (
   <div className="talk">
     <div className="talk-detail">
-      <a href={link}>
-        <h4><FontAwesomeIcon icon={faLink}/>{title}</h4>
+      <a href={link} rel="noopener noreferrer" target="_blank">
+        <h4>
+          <FontAwesomeIcon icon={faLink} />
+          {title}
+        </h4>
       </a>
     </div>
 
