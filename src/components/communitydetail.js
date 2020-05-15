@@ -1,6 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMapPin, faLink} from '@fortawesome/free-solid-svg-icons'
+import { faMapPin, faLink } from "@fortawesome/free-solid-svg-icons"
 
 const CommunityDetail = ({ title, duration, experience_url, community }) => (
   <div className="about-community row justify-content-between">
@@ -13,7 +13,9 @@ const CommunityDetail = ({ title, duration, experience_url, community }) => (
 
     <div className="community-item-about col-lg col-md">
       <a href={experience_url} rel="noopener noreferrer" target="_blank">
-        <h3><FontAwesomeIcon icon={faLink}/> {community}</h3>
+        <h3>
+          <FontAwesomeIcon icon={faLink} /> {community}
+        </h3>
       </a>
     </div>
 
@@ -21,7 +23,7 @@ const CommunityDetail = ({ title, duration, experience_url, community }) => (
       className="col-lg-2 col-md"
       style={{ fontSize: "13px", fontWeight: "600" }}
     >
-      <FontAwesomeIcon icon={faMapPin}/> Owerri, Nigeria
+      <FontAwesomeIcon icon={faMapPin} /> Owerri, Nigeria
     </div>
   </div>
 )

@@ -38,7 +38,11 @@ export default props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#about">
+            <Nav.Link
+              style={navStyle.linkFont}
+              className="nav-link"
+              href="/#about"
+            >
               About
             </Nav.Link>
             <Nav.Link
@@ -62,10 +66,18 @@ export default props => {
             >
               Community
             </Nav.Link>
-            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#talks">
+            <Nav.Link
+              style={navStyle.linkFont}
+              className="nav-link"
+              href="/#talks"
+            >
               Talks
             </Nav.Link>
-            <Nav.Link style={navStyle.linkFont} className="nav-link" href="/#contact">
+            <Nav.Link
+              style={navStyle.linkFont}
+              className="nav-link"
+              href="/#contact"
+            >
               Contact
             </Nav.Link>
           </Nav>

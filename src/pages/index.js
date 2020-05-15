@@ -9,7 +9,7 @@ import {
   faNodeJs,
   faJsSquare,
   faPhp,
-  faLaravel
+  faLaravel,
 } from "@fortawesome/free-brands-svg-icons"
 import ScrollReveal from "scrollreveal"
 
@@ -62,7 +62,12 @@ class IndexPage extends React.Component {
     ],
     counter: 0,
     app_counter: 0,
-    app_type: ["are scalable", "are secure", "are high performing", "have good UX"],
+    app_type: [
+      "are scalable",
+      "are secure",
+      "are high performing",
+      "have good UX",
+    ],
   }
 
   encode = data => {
@@ -156,8 +161,7 @@ class IndexPage extends React.Component {
               <br />
               I build web applications
               <br />
-              that {" "}
-              <span>{this.state.app_type[this.state.app_counter]}</span>
+              that <span>{this.state.app_type[this.state.app_counter]}</span>
             </h1>
           </div>
         </header>
@@ -181,10 +185,11 @@ class IndexPage extends React.Component {
                 learn what I need to deliver projects. Nevertheless, I have more
                 experience building{" "}
                 <span>fullstack Javascript applications</span> (React for FE and
-                Node for BE), PHP/Laravel powered applications, <span>API's</span> (RESTful and GraphQL),
-                persisting data with <span>SQL</span> and <span>NoSQL</span>{" "}
-                databases. Recently, I started digging into <span>Docker</span>,{" "}
-                <span>K8s</span> and <span>cloud computing</span>.
+                Node for BE), PHP/Laravel powered applications,{" "}
+                <span>API's</span> (RESTful and GraphQL), persisting data with{" "}
+                <span>SQL</span> and <span>NoSQL</span> databases. Recently, I
+                started digging into <span>Docker</span>, <span>K8s</span> and{" "}
+                <span>cloud computing</span>.
               </p>
 
               <p>
@@ -225,8 +230,8 @@ class IndexPage extends React.Component {
             detail={
               <>
                 <p>
-                  I build full stack web applications for Tunga clients. My stack
-                  includes; <span>MERN</span>, <span>PHP/Laravel</span>,
+                  I build full stack web applications for Tunga clients. My
+                  stack includes; <span>MERN</span>, <span>PHP/Laravel</span>,
                   Database <span>(Postgresql, MySQL, MongoDB)</span>.
                 </p>
               </>
@@ -304,13 +309,17 @@ class IndexPage extends React.Component {
             location="Owerri, Nigeria"
             detail={
               <>
-                <p>
-                  During my time as the technical lead at Agrohive:
-                </p>
+                <p>During my time as the technical lead at Agrohive:</p>
                 <ul>
-                  <li>I built the first company portfolio site which helped increase brand visibility on the internet.</li>
+                  <li>
+                    I built the first company portfolio site which helped
+                    increase brand visibility on the internet.
+                  </li>
                   <li>I managed the servers hosting the companies site.</li>
-                  <li>I maintained the web platform and squashed production bugs as they occurred.</li>
+                  <li>
+                    I maintained the web platform and squashed production bugs
+                    as they occurred.
+                  </li>
                 </ul>
               </>
             }
@@ -354,8 +363,8 @@ class IndexPage extends React.Component {
               <FontAwesomeIcon color="orange" icon={faJsSquare} />
               <FontAwesomeIcon color="green" icon={faNodeJs} />
               <FontAwesomeIcon color="skyblue" icon={faReact} />
-              <FontAwesomeIcon icon={faPhp}/>
-              <FontAwesomeIcon icon={faLaravel}/>
+              <FontAwesomeIcon icon={faPhp} />
+              <FontAwesomeIcon icon={faLaravel} />
             </div>
           </div>
         </section>
@@ -478,19 +487,35 @@ class IndexPage extends React.Component {
             style={{ margin: "auto" }}
           >
             <div className="svg col-lg-4">
-              <a href="https://github.com/OPARA-PROSPER" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://github.com/OPARA-PROSPER"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
 
-              <a href="https://linkedin.com/in/prosper-opara/" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://linkedin.com/in/prosper-opara/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
 
-              <a href="https://twitter.com/kodekage" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://twitter.com/kodekage"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
 
-              <a href="https://dev.to/kodekage" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://dev.to/kodekage"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faDev} />
               </a>
             </div>
