@@ -478,19 +478,19 @@ class IndexPage extends React.Component {
             style={{ margin: "auto" }}
           >
             <div className="svg col-lg-4">
-              <a href="https://github.com/OPARA-PROSPER">
+              <a href="https://github.com/OPARA-PROSPER" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
 
-              <a href="https://linkedin.com/in/prosper-opara/">
+              <a href="https://linkedin.com/in/prosper-opara/" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
 
-              <a href="https://twitter.com/kodekage">
+              <a href="https://twitter.com/kodekage" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
 
-              <a href="https://dev.to/kodekage">
+              <a href="https://dev.to/kodekage" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faDev} />
               </a>
             </div>
