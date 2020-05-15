@@ -16,7 +16,7 @@ const Work = ({ url, location, title, company, detail, duration }) => (
     <div className="work-detail col-lg col-md order-lg-1 order-md-2 col-s order-sm-1">
       <div className="work-title">
         <h3>
-          <a href={url} target="_blank"><FontAwesomeIcon icon={faLink}/>{company}</a>
+          <a href={url} rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLink}/>{company}</a>
         </h3>
       </div>
       {detail}
