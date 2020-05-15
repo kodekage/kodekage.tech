@@ -5,7 +5,7 @@ import { faLink} from '@fortawesome/free-solid-svg-icons'
 const Talk = ({ title, talks, link }) => (
   <div className="talk">
     <div className="talk-detail">
-      <a href={link}>
+      <a href={link} rel="noopener noreferrer" target="_blank">
         <h4><FontAwesomeIcon icon={faLink}/>{title}</h4>
       </a>
     </div>
