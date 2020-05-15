@@ -339,12 +339,20 @@ class IndexPage extends React.Component {
                 </p>
                 <ol>
                   <li>
-                    <a href="https://dev.to/thisdotmedia/yolo-brolo-setting-up-gatsby-and-netlify-1732">
+                    <a
+                      href="https://dev.to/thisdotmedia/yolo-brolo-setting-up-gatsby-and-netlify-1732"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       Yolo Brolo: setting up gatsby and netlify
                     </a>
                   </li>
                   <li>
-                    <a href="https://dev.to/thisdotmedia/yolo-brolo-adding-features-to-your-gatsby-site-21ho">
+                    <a
+                      href="https://dev.to/thisdotmedia/yolo-brolo-adding-features-to-your-gatsby-site-21ho"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       Yolo Brolo: adding features to your gatsby site
                     </a>
                   </li>
