@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
         title: "Teamwork [API]",
         about:
           "This project is a RESTFul API for the teamwork client app. It's built with Nodejs/Expressjs",
-        url: "https://github.com/OPARA-PROSPER/teamwork",
+        url: "http://twk.herokuapp.com/",
       },
       {
         img:
