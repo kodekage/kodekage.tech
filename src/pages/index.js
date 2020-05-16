@@ -258,18 +258,16 @@ class IndexPage extends React.Component {
                     stores conversations in channels.
                   </li>
                   <li>
-                    Learnt the agile methodology for software development using
-                    pivotal tracker for delivering projects to clients.
+                    Worked with agile methodology for software development using pivotal-tracker for delivering projects to clients.
                   </li>
                   <li>
-                    Deepened my understanding of versioning using Git and GitHub
-                    for collaboration.
+                  Used and deepened my understanding of versioning using Git and GitHub for collaboration.
                   </li>
                   <li>
                     Learnt empathy leading a software engineering team which
                     require more than coding skills.
                   </li>
-                  <li>Worked on a php project using the Laravel framework.</li>
+                  <li>Contributed to building a laravel based freelancing application used for managing clients and payment.</li>
 
                   <strong>Small wins:</strong>
                   <ol>
