@@ -531,15 +531,15 @@ class IndexPage extends React.Component {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 text-left"
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={this.handleContactSubmission}
-            >
-              <form className="contact-form">
+            <div className="col-lg-4 text-left">
+              <form
+                className="contact-form"
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleContactSubmission}
+              >
                 <input type="hidden" name="form-name" value="contact" />
 
                 <div className="form-group">
