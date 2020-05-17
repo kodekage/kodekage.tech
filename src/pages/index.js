@@ -89,7 +89,20 @@ class IndexPage extends React.Component {
         message: this.state.message,
       }),
     })
-      .then(() => alert("Your message was successfully sent"))
+      .then(() => {
+        if (
+          this.state.sender === "" ||
+          this.state.email === "" ||
+          this.state.message === ""
+        )
+          return alert("You have an empty field")
+        alert("Your message was successfully sent")
+        this.setState({
+          sender: "",
+          email: "",
+          message: "",
+        })
+      })
       .catch(error => alert(error))
   }
 
