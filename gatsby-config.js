@@ -3,7 +3,7 @@ module.exports = {
     title: `kodekage`,
     description: `Prosper Opara | Fullstack Engineer and Technical Writer`,
     author: `Prosper Opara`,
-    image: `prosper.jpg`
+    image: `/images/prosper.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
