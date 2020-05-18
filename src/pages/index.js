@@ -288,17 +288,14 @@ class IndexPage extends React.Component {
                   </li>
 
                   <strong>Small wins:</strong>
-                  <ol>
                     <li>
                       I learnt the architecture of Restful API's and how to
                       build one
                     </li>
                     <li>I got a deeper understanding of Node.js/Express.js</li>
                     <li>I worked with the PHP Laravel framework</li>
-                  </ol>
 
                   <strong>Project GitHub URL:</strong>
-                  <ol>
                     <li>
                       <a href="https://github.com/OPARA-PROSPER/Dionysus-Slackbot">
                         {" "}
@@ -310,7 +307,6 @@ class IndexPage extends React.Component {
                         Lancers
                       </a>
                     </li>
-                  </ol>
                 </ul>
               </>
             }
@@ -556,9 +552,11 @@ class IndexPage extends React.Component {
                 <input type="hidden" name="form-name" value="contact" />
 
                 <div className="form-group">
+                  <label htmlFor="contact-name">Name</label>
                   <input
                     type="text"
                     className="form-control"
+                    id="contact-name"
                     name="name"
                     placeholder="what's your name?"
                     value={this.state.sender}
@@ -567,19 +565,23 @@ class IndexPage extends React.Component {
                 </div>
 
                 <div className="form-group">
+                  <label htmlFor="contact-email">Email</label>
                   <input
                     type="email"
+                    id="contact-email"
                     name="email"
                     className="form-control"
-                    placeholder="email address"
+                    placeholder="e.g oparaprosper79@gmail.com"
                     value={this.state.email}
                     onChange={this.handleEmailChange}
                   />
                 </div>
 
                 <div className="form-group">
+                  <label htmlFor="contact-message">Message</label>
                   <textarea
                     className="form-control"
+                    id="contact-message"
                     name="message"
                     placeholder="Leave a message for me..."
                     value={this.state.message}
