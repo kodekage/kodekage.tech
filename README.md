@@ -12,6 +12,6 @@ the complaints of my people (error logs and stack traces) and keep the god's hap
 
 Date: 15th May 2020
 
-![kodekage-netlify](https://user-images.githubusercontent.com/30195980/82043865-34a12380-96a4-11ea-9bbb-bcf7647d983f.PNG)
+![kodekage-light-house](https://user-images.githubusercontent.com/30195980/82212051-d2e1f300-9909-11ea-9fe7-1fb419c7b450.PNG)
 
 ### Live version: https://kodekage.netlify.app
