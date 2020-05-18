@@ -25,7 +25,6 @@ export default props => {
     <>
       <Navbar
         collapseOnSelect
-        // expanded={true}
         style={navStyle.bg}
         expand="lg"
         variant="dark"
