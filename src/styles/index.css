@@ -1,10 +1,13 @@
 .App-header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(168deg, rgba(19,49,192,.7) 35%, rgba(4,8,107,1) 100%), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_900/v1586561707/op_tzhnyp.jpg");
+  background: linear-gradient(168deg, rgba(19,49,192,.7) 35%, rgb(4, 8, 107) 100%), url("https://res.cloudinary.com/github-com-opara-prosper/image/upload/c_scale,w_900/v1586561707/op_tzhnyp.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+li {
+  width: 100%;
 }
 hr {
   width: 300px;
@@ -17,7 +20,7 @@ hr::before {
   position: relative;
   top: -12px;
   left: 50%;
-  color: orange;
+  color: #ffa500;
 }
 .invisible-div {
   visibility: hidden;
@@ -50,7 +53,7 @@ hr::before {
 .bg-img h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   margin: 0 0 3em;
   visibility: hidden;
 }

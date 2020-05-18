@@ -349,7 +349,7 @@ class IndexPage extends React.Component {
                   Media Yolo brolo series on the company YouTube channel. I
                   delivered two technical articles that were published:
                 </p>
-                <ol>
+                <ul>
                   <li>
                     <a
                       href="https://dev.to/thisdotmedia/yolo-brolo-setting-up-gatsby-and-netlify-1732"
@@ -368,7 +368,7 @@ class IndexPage extends React.Component {
                       Yolo Brolo: adding features to your gatsby site
                     </a>
                   </li>
-                </ol>
+                </ul>
               </>
             }
             duration="July 2019 - July 2019"
