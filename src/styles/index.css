@@ -6,6 +6,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+li {
+  width: 100%;
+}
 hr {
   width: 300px;
   margin: 1em auto 4em;
