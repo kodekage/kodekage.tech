@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `kodekage`,
-    short_name: `kage`,
-    description: `Prosper Opara portfolio website`,
+    description: `Prosper Opara | Fullstack Engineer and Technical Writer`,
     author: `Prosper Opara`,
+    image: `prosper.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
