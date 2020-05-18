@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `kodekage`,
-    description: `Prosper Opara | Fullstack Engineer and Technical Writer`,
+    description: `Prosper Opara - Fullstack Engineer and Technical Writer`,
     author: `Prosper Opara`,
     image: `/images/prosper.jpg`
   },
