@@ -20,7 +20,7 @@ import CommunityDetail from "../components/communitydetail"
 import Talk from "../components/talk"
 import Work from "../components/work"
 
-import op from "../images/_DSC0054.jpg"
+import op from "../images/prosper.png"
 
 class IndexPage extends React.Component {
   state = {
