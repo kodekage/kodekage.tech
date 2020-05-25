@@ -2,8 +2,10 @@
 title: Understanding Node Error [ERR_HTTP_HEADERS_SENT]
 image: https://ucarecdn.com/e0a5b7b8-33ad-4304-9c1c-0253f97bf48c/
 description: This post describes why  the Node Error [ERR_HTTP_HEADERS_SENT] cannot set headers after they are sent.
+date: "2019-12-03"
 tags: nodejs api
 ---
+![Title image](https://ucarecdn.com/e0a5b7b8-33ad-4304-9c1c-0253f97bf48c/)
 
 Chances are as a NodeJS developer you've encountered this runtime error:
 **[ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client**
@@ -12,7 +14,8 @@ You must have written the perfect code and expect a flawless code excution (i wi
 
 **SPOILER ALERT**: I have run into this runtime error couple times while building restful API's and this is an effort to document what i learnt about this error, shorten your debugging time, help you understand why this error is thrown and finally how best handle it.
 
-## Uncovering the mystry
+## Uncovering the mystery
+
 Error [ERR_HTTP_HEADERS_SENT] is an interesting error that is fired up when a server tries to send more than one response to a client. What this means is that for a given client request the server previously sent a response (either a success responsei with the resource requested or error response for a bad request) back to the client and now is **unexpectedly** trying to send another response :(
 
 ## [Case Study] talk is cheap
@@ -87,6 +90,7 @@ app.listen(4000, () => {
 });
 ```
 When a client makes a server request to this endpoint with or without a request body to the server request, the server sends the correct response and stop the function execution as necessary.
+
 ![post_req.png](https://ucarecdn.com/6f506581-4f7d-4918-8c3e-5a352f65b53e/)
 
 You'd be tempted to ask why the last server response has no return statement sending it to the client?, well in this case there is really no need to return it since there is no code further down the function to be excuted so it means the the request handler stops excuting since it has comee to the end of the road. 
@@ -98,8 +102,4 @@ Hopefully, you now have a better understanding of why this error message is fire
 
 I have a [GitHub repository](https://github.com/OPARA-PROSPER/node-server-error) for the failing code and passing code, you can clone and play with the code by trying out some other use case (hopefully can send a PR for your use case).
 
-Thanks for reading
-upload imagesIMAGES?
-PREVIEW
-
-SAVE CHANGES
+Thanks for reading...

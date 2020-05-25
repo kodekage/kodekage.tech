@@ -2,9 +2,10 @@
 title: LEARNING - A developers perspective
 image: https://res.cloudinary.com/github-com-opara-prosper/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1584111509/dreyfus-img_dkeqgb.png
 description: This article is an attempt to share ideas on how to learn as a software developer
+date: "2020-03-13"
 tags: learning growth
 ---
-<!--![Article hero image](https://res.cloudinary.com/github-com-opara-prosper/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1584111509/dreyfus-img_dkeqgb.png)-->
+![Article hero image](https://res.cloudinary.com/github-com-opara-prosper/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1584111509/dreyfus-img_dkeqgb.png)
 
 Growing is the ultimate aim of every developer. Growing to understand how tools or systems work under the hood, going beyond the basics into deeper things or having a holistic understanding of the technologies you associate yourself which is truly the ultimate goal. The aim (to grow) is pretty much known by a lot of persons but the "HOW" of going about growing is what a lot of persons either don't fully understand, unknowingly ignores or totally are ignorant about. What is the best way to approach learning as a developer? How can we optimize learning to get the best possible results to help us grow, move to the next level of expertise and solve complex problems?
 
@@ -13,6 +14,7 @@ Over the years, computer scientist and engineers have solved software related pr
 
 ### Dreyfus Model
 ![Dreyfus model](https://res.cloudinary.com/github-com-opara-prosper/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1584111501/dreyfus_skns9e.png)
+
 We primarily learn to be more knowledgeable in specific skill sets or fields; language specific skills (JavaScript, ruby, react, rails, MySQL), fields (full-stack development, front-end development, developer advocacy, cloud engineering etc). It's a great thing to be able to measure learning in order to know how much we are really growing and advancing to the level of expertise.
 
 The Dreyfus model for skill acquisition is a model developed by the Dreyfus brothers (Staurt and Hubert Dreyfus) and it breaks down the journey from novice to expertise for any skill set into 5 levels;

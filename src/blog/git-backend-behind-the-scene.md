@@ -2,10 +2,11 @@
 title: GIT BACKEND (BEHIND THE SCENE)
 image: https://thepracticaldev.s3.amazonaws.com/i/nuaudq3junzpq0qanj88.png
 description: A deep dive into how Git tracks file contents under the hood
+date: "2018-11-07"
 tags: git version-control
 ---
 
-![Title image](https://thepracticaldev.s3.amazonaws.com/i/nuaudq3junzpq0qanj88.png)
+![](https://thepracticaldev.s3.amazonaws.com/i/nuaudq3junzpq0qanj88.png)
 
 ### Introduction
 

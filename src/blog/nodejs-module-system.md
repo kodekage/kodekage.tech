@@ -2,9 +2,10 @@
 title: Node.js Module System
 image: https://dev-to-uploads.s3.amazonaws.com/i/cc1ijb983a8x222cp1cf.png
 description: An in depth guide on Node module system
+date: "2020-04-22"
 tags: node javascript npm
 ---
-<!--![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/cc1ijb983a8x222cp1cf.png) -->
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/cc1ijb983a8x222cp1cf.png)
 
 Node.js is a JavaScript run-time built on top of the chrome v8 engine. Succinctly, Node.js as a platform provides an environment outside of the traditional web browser for executing JavaScript code (It's important to note here that Node.js was created for building network applications using JavaScript).
 
