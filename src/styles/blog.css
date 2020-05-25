@@ -117,4 +117,7 @@ pre {
     .blog-post {
         height: 100%;
     }
+    .blog-article {
+        font-size: 20px;
+    }
 }
