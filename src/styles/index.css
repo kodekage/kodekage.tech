@@ -91,7 +91,7 @@ svg {
 .stack {
   background: rgba(0,23,177,0.9);
   padding: .5em 0 4em;
-  width: 50%;
+  /*width: 50%;*/
   margin: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
@@ -110,7 +110,7 @@ svg {
 
 h3 {
   font-size: 50px;
-  color: #ffb723;
+  color: #444;
   font-weight: 900;
   margin: 0 0;
   text-align: center;
