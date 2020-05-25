@@ -40,6 +40,13 @@ export default props => {
             <Nav.Link
               style={navStyle.linkFont}
               className="nav-link"
+              href="/blog"
+            >
+              Blog
+            </Nav.Link>
+            <Nav.Link
+              style={navStyle.linkFont}
+              className="nav-link"
               href="/#about"
             >
               About

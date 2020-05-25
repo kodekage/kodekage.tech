@@ -1,0 +1,120 @@
+.blog-header {
+    height: 30vh;
+    padding: 20em 0 5em;
+    text-align: center;
+}
+.blog-header h1 {
+    color: #ffffff;
+}
+.blog-container {
+    margin: 5em auto;
+    width: 70%;
+}
+a.blog-post {
+    color: inherit;
+}
+.blog-post {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 10px 0px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 2em auto 2em 2em;
+}
+.blog-post div {
+    margin: 1em;
+}
+.blog-post p {
+    font-size: 16px;
+}
+.blog-post img{
+    width: 100%;
+    height: 200px;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-post h4 {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.blog-post p {
+    margin-top: 1em;
+}
+.tags {
+    background: rgba(68, 92, 245, 0.9);
+    margin: .2em;
+    border-radius: 8px;
+    padding: .1em .5em;
+    float: bottom;
+    color: #ffffff;
+}
+.frontmatter {
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Template css */
+.blog-article {
+    margin: 5em auto;
+    padding: 2em;
+    text-align: left;
+    width: 55%;
+    font-size: 112.5%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+}
+.blog-article h1 {
+    font-weight: 900;
+    margin: .5em 0 0;
+    font-size: 30px;
+    text-align: left;
+}
+.blog-article h3, .blog-article h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: .8em;
+    color: #111111;
+}
+.blog-article img {
+    width: 100%;
+    margin: .5em auto;
+    /*height: 400px;*/
+}
+pre {
+    background: #333;
+    width: 100%;
+    padding: 2em;
+    color: #ffffff;
+    margin: 1em auto;
+    left: -2.5em;
+    border-radius: 5px;
+}
+.article-contact h5 {
+    font-weight: 900;
+}
+
+@media (max-width: 959px) {
+    .blog-article {
+        width: 90%;
+        padding: 1em;
+    }
+    .blog-article h1 {
+        font-size: 25px;
+    }
+    .blog-container {
+        width: 90%;
+    }
+    .blog-post {
+        margin: 1em auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .blog-post {
+        height: 100%;
+    }
+}
