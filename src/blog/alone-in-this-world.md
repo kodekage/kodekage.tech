@@ -2,7 +2,7 @@
 title: Alone In This World
 image: https://user-images.githubusercontent.com/30195980/85117481-d8876d00-b216-11ea-8ca7-f2e3e902c541.jpg
 description: Struggles of a young Nigerian youth fighting stereotype
-date: "2020-19-06"
+date: "2020-06-19"
 tags: life
 ---
 
