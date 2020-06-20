@@ -233,7 +233,22 @@ class IndexPage extends React.Component {
         <section className="job-experience" id="jobexperience">
           <h3>Work Experience</h3>
           <hr />
-
+          <Work
+            title="MLH Fellow"
+            url="https://fellowship.mlh.io/"
+            company="Major League Hacking"
+            duration="May 2020 - Present"
+            location="Remote"
+            detail={
+              <>
+                <p>
+                  As part of the inaugural class of MLH Fellows, I contributed to
+                  Open Source projects with a team of Fellows under the educational
+                  mentorship of a professional software engineer.
+                </p>
+              </>
+            }
+          />
           <Work
             title="Freelance Software Engineer"
             url="https://tunga.io/network/Prosper_Opara"
