@@ -403,9 +403,9 @@ class IndexPage extends React.Component {
             <h4>Stack</h4>
 
             <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="orange" icon={faJsSquare} />
-              <FontAwesomeIcon color="green" icon={faNodeJs} />
-              <FontAwesomeIcon color="skyblue" icon={faReact} />
+              <FontAwesomeIcon icon={faJsSquare} />
+              <FontAwesomeIcon icon={faNodeJs} />
+              <FontAwesomeIcon icon={faReact} />
               <FontAwesomeIcon icon={faPhp} />
               <FontAwesomeIcon icon={faLaravel} />
             </div>
