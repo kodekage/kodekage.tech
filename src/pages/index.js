@@ -312,13 +312,21 @@ class IndexPage extends React.Component {
 
                   <strong>Project GitHub URL:</strong>
                     <li>
-                      <a href="https://github.com/OPARA-PROSPER/Dionysus-Slackbot">
+                      <a
+                        href="https://github.com/kodekage/Dionysus-Slackbot"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         {" "}
                         slackbot{" "}
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/OPARA-PROSPER/lancers">
+                      <a
+                        href="https://github.com/kodekage/lancers"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         Lancers
                       </a>
                     </li>
