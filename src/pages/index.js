@@ -312,13 +312,21 @@ class IndexPage extends React.Component {
 
                   <strong>Project GitHub URL:</strong>
                     <li>
-                      <a href="https://github.com/OPARA-PROSPER/Dionysus-Slackbot">
+                      <a
+                        href="https://github.com/kodekage/Dionysus-Slackbot"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         {" "}
                         slackbot{" "}
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/OPARA-PROSPER/lancers">
+                      <a
+                        href="https://github.com/kodekage/lancers"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         Lancers
                       </a>
                     </li>
@@ -395,9 +403,9 @@ class IndexPage extends React.Component {
             <h4>Stack</h4>
 
             <div className="row no-gutters justify-content-center">
-              <FontAwesomeIcon color="orange" icon={faJsSquare} />
-              <FontAwesomeIcon color="green" icon={faNodeJs} />
-              <FontAwesomeIcon color="skyblue" icon={faReact} />
+              <FontAwesomeIcon icon={faJsSquare} />
+              <FontAwesomeIcon icon={faNodeJs} />
+              <FontAwesomeIcon icon={faReact} />
               <FontAwesomeIcon icon={faPhp} />
               <FontAwesomeIcon icon={faLaravel} />
             </div>
