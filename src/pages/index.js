@@ -523,7 +523,7 @@ class IndexPage extends React.Component {
           >
             <div className="svg col-lg-4">
               <a
-                href="https://github.com/OPARA-PROSPER"
+                href="https://github.com/kodekage"
                 rel="noopener noreferrer"
                 target="_blank"
               >
